@@ -1,0 +1,48 @@
+{
+  "source": "./lib",
+  "destination": "./docs/esdoc",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "lint": {
+          "enable": true
+        },
+        "coverage": {
+          "enable": false
+        },
+        "accessor": {
+          "access": [
+            "public"
+          ],
+          "autoPrivate": true
+        },
+        "undocumentIdentifier": {
+          "enable": false
+        },
+        "unexportedIdentifier": {
+          "enable": true
+        },
+        "typeInference": {
+          "enable": true
+        },
+        "brand": {
+          "title": "sequelize-resource-controller",
+          "description": "CRUD REST Api from your sequelize model for restify and express",
+          "repository": "https://github.com/mvillarrealb/sequelize-resource-controller.git"
+        },
+        "manual": {
+          "globalIndex": true,
+          "index": "./README.md",
+          "files": [
+            "./docs/getting-started.md",
+            "./docs/resource-controller.md",
+            "./docs/express-implementation.md",
+            "./docs/restify-implementation.md",
+            "./docs/extending-controller.md"
+          ]
+        }
+      }
+    }
+  ]
+}

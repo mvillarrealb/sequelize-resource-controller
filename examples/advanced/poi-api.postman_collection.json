@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "5e6444db-07f4-452e-8f72-68e641dba94b",
+		"name": "poi-api",
+		"description": "\tsequelize-resource-controller advanced example using node-lite-router to handle routes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  { \"poi_id\": \"e59fc90f-1985-4a72-9621-af3b975148d0\", \"name\": \"Katz\", \"latitude\": 17.4555679, \"longitude\": 103.4627375 }\n "
+				},
+				"url": {
+					"raw": "http://localhost:4000/v1/interest-points",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"interest-points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  { \"name\": \"Updated point of interest\"}\n "
+				},
+				"url": {
+					"raw": "http://localhost:4000/v1/interest-points/e59fc90f-1985-4a72-9621-af3b975148d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"interest-points",
+						"e59fc90f-1985-4a72-9621-af3b975148d0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/v1/interest-points/e59fc90f-1985-4a72-9621-af3b975148d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"interest-points",
+						"e59fc90f-1985-4a72-9621-af3b975148d0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/v1/interest-points/e59fc90f-1985-4a72-9621-af3b975148d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"interest-points",
+						"e59fc90f-1985-4a72-9621-af3b975148d0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/v1/interest-points?limit=2&offset=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"interest-points"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk Create",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b3554d6f-31d0-4ce7-b570-78259f4e4fe4",
+						"type": "text/javascript",
+						"exec": [
+							"var poisLeft = pm.environment.get(\"remaining_pois\");",
+							"",
+							"if(!poisLeft) {",
+							"    poisLeft = [",
+							"        {  'name': 'Reallinks', 'latitude': 45.590443, 'longitude': 5.8930389 },",
+							"        { 'name': 'Skyba', 'latitude': 59.1930889, 'longitude': 18.1475406 },",
+							"        { 'name': 'Tavu', 'latitude': 65.2958948, 'longitude': 21.3194467 },",
+							"        { 'name': 'Trilia', 'latitude': 22.5064672, 'longitude': -79.4760133 },",
+							"        { 'name': 'Devshare', 'latitude': 39.8385153, 'longitude': -8.8190392 },",
+							"        { 'name': 'Skajo', 'latitude': 56.3464983, 'longitude': 21.065493 }",
+							"    ];",
+							"}",
+							"",
+							"var currentPois = poisLeft.shift();",
+							"pm.environment.set(\"remaining_pois\",poisLeft);",
+							"pm.environment.set(\"poi\",JSON.stringify(currentPois));"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a2304ae0-6872-47f8-93bf-2560149d2d1a",
+						"type": "text/javascript",
+						"exec": [
+							"var todosLeft = pm.environment.get(\"remaining_pois\");",
+							"",
+							"if(todosLeft && todosLeft.length > 0 ) {",
+							"    postman.setNextRequest(\"Bulk Create\");",
+							"} else {",
+							"    postman.setNextRequest(null);",
+							"}",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{{poi}}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/v1/interest-points",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"v1",
+						"interest-points"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "83b77e3c-4352-4c0b-a60d-c503d3f2e02d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6ee21735-a0ad-4c49-baa3-d658ef508cbc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

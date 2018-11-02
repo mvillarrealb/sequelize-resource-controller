@@ -1,0 +1,21 @@
+{
+  "name": "src-advanced-example",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "express": "node expressApi.js",
+    "restify": "node restifyApi.js"
+  },
+  "author": "Marco Villarreal",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "node-lite-router": "^1.0.0",
+    "restify": "^7.2.1",
+    "sequelize": "^4.41.0",
+    "sqlite3": "^4.0.3",
+    "restify-router": "^0.5.1"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "sequelize-resource-controller",
+  "version": "1.0.0",
+  "description": "CRUD REST Api from your sequelize model for restify and express",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "docs": "./node_modules/.bin/esdoc",
+    "lint": "./node_modules/.bin/eslint lib",
+    "test": "npm run test-unit && npm run test-integration",
+    "test-unit": "mocha -t 30000 --reporter spec \"test/unit/**/*.js\"",
+    "test-integration": "mocha -t 30000 --reporter spec \"test/integration/**/*.test.js\"",
+    "cover": "npm run cover-unit && npm run cover-integration",
+    "cover-integration": "nyc --reporter=html mocha test/integration/**/*.test.js",
+    "cover-unit": "nyc --reporter=html mocha test/unit/**/*.test.js"
+  },
+  "repository": {
+    "url": "https://github.com/mvillarrealb/sequelize-resource-controller.git",
+    "type": "git"
+  },
+  "author": "Marco Villarreal <erick.slayer.m.v@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.0",
+    "express": "^4.16.3",
+    "restify": "^7.2.1",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.2.0",
+    "esdoc": "^1.1.0",
+    "esdoc-node": "^1.0.3",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "node-lite-router": "^1.0.0",
+    "nyc": "^12.0.2",
+    "prettier": "^1.14.3",
+    "restify-router": "^0.5.1",
+    "sqlite3": "^4.0.2"
+  }
+}

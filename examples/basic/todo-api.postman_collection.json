@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "8148ebe2-0907-45f4-9016-719e2fab0783",
+		"name": "todo-api",
+		"description": "sequelize-resource-controller TODO API simple stuff",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/v1/todos?limit=2&offset=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"todos"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				},
+				"description": "Find All todos limited by 5 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"todo_id\":\"8c165b2a-ec53-4118-bb4f-6b6e1a136300\",\n\t\"name\":\"Test sequelize-resource-controller API from postman\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/v1/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"todos"
+					]
+				},
+				"description": "Create a todo"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/v1/todos/8c165b2a-ec53-4118-bb4f-6b6e1a136300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"todos",
+						"8c165b2a-ec53-4118-bb4f-6b6e1a136300"
+					]
+				},
+				"description": "Get a todo by the Id 8c165b2a-ec53-4118-bb4f-6b6e1a136300"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Test sequelize-resource-controller API from postman(Done :D)\",\n\t\"is_done\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/v1/todos/8c165b2a-ec53-4118-bb4f-6b6e1a136300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"todos",
+						"8c165b2a-ec53-4118-bb4f-6b6e1a136300"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/v1/todos/8c165b2a-ec53-4118-bb4f-6b6e1a136300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"todos",
+						"8c165b2a-ec53-4118-bb4f-6b6e1a136300"
+					]
+				},
+				"description": "Deletes a todo with id 8c165b2a-ec53-4118-bb4f-6b6e1a136300"
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk Create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bd7d0583-cf9e-48bf-bd8a-0ab828fc2a60",
+						"type": "text/javascript",
+						"exec": [
+							"var todosLeft = pm.environment.get(\"remaining_todos\");",
+							"",
+							"if(todosLeft && todosLeft.length > 0 ) {",
+							"    postman.setNextRequest(\"Bulk Create\");",
+							"} else {",
+							"    postman.setNextRequest(null);",
+							"}",
+							""
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ece96fed-da37-4c36-8986-1d06ba31fc27",
+						"type": "text/javascript",
+						"exec": [
+							"var todosLeft = pm.environment.get(\"remaining_todos\");",
+							"",
+							"if(!todosLeft) {",
+							"    todosLeft = [",
+							"        \"create a postman collection\",",
+							"        \"Create a pre request script\",",
+							"        \"Develop some node modules\",",
+							"        \"run eslint on your module\",",
+							"        \"Fix the issues with the linting\",",
+							"        \"Run unit tests\"",
+							"    ];",
+							"}",
+							"var currentTodo = todosLeft.shift();",
+							"pm.environment.set(\"remaining_todos\",todosLeft);",
+							"pm.environment.set(\"todo\",currentTodo);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"{{todo}}\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/v1/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"todos"
+					]
+				},
+				"description": "Create a list of todos, basically a fun setup"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "e8a6302e-1966-4831-9236-6693bcaca0c6",
+			"key": "BASE_URL",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
