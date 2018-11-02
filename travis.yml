@@ -1,0 +1,13 @@
+language: node_js
+sudo: false
+node_js:
+  - "10.9.0"
+script:
+  - npm run lint
+  - npm run cover && bash <(curl -s https://codecov.io/bash) -f coverage/lcov.info
+deploy:
+  provider: npm
+  email: erick.slayer.m.v@gmail.com
+  api_key: $NPM_TOKEN
+  on:
+    tags: true

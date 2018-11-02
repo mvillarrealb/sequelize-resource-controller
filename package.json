@@ -30,6 +30,18 @@
     "restify": "^7.2.1",
     "sequelize": "^4.38.0"
   },
+  "keywords": [
+    "rest",
+    "sequelize",
+    "CRUD Api",
+    "sequelize rest",
+    "resource Api",
+    "express api",
+    "restify Api"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
