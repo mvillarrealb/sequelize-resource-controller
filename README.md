@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/sequelize-resource-controller.svg)](https://www.npmjs.com/package/sequelize-resource-controller)
 [![Build Status](https://travis-ci.org/mvillarrealb/sequelize-resource-controller.svg?branch=master)](https://travis-ci.org/mvillarrealb/sequelize-resource-controller)
-[![codecov](https://codecov.io/gh/mvillarrealb/sequelize-resource-controlle/branch/master/graph/badge.svg)](https://codecov.io/gh/mvillarrealb/sequelize-resource-controller)
+[![codecov](https://codecov.io/gh/mvillarrealb/sequelize-resource-controller/branch/master/graph/badge.svg)](https://codecov.io/gh/mvillarrealb/sequelize-resource-controller)
 ![node](https://img.shields.io/node/v/sequelize-resource-controller.svg)
 [![License](https://img.shields.io/npm/l/sequelize-resource-controller.svg?maxAge=2592000?style=plastic)](https://github.com/mvillarrealb/sequelize-resource-controller/blob/master/LICENSE)
 
@@ -16,38 +16,13 @@ Provides support for Restify and Express, two of the most popular http framework
 npm install --save sequelize-resource-controller
 ```
 
-# Testing
+# Documentation
 
-## Run all tests
-
-```bash
-npm test
-```
-
-## Run unit tests only
-
-```bash
-npm run unit-test
-```
-
-## Run integ tests only
-
-```bash
-npm run integ-test
-```
-
----
-
-# Generate ESDOC Documentation
-
-```bash
-npm run docs
-```
----
+You can check [ESDOC documentation](https://mvillarrealb.github.io/sequelize-resource-controller/)
 
 # Examples
 
-# Basic Example (Todo List Api)
+## Basic Example (Todo List Api)
 
 The basic example is just a straighforward todo Api with very few files(one file for the database & models, and one for each implementation).
 
@@ -63,7 +38,9 @@ To test this api use [todo-api.postman_collection](examples/basic/todo-api.postm
 
 [You can check the example Here](examples/basic/README.md)
 
-# Advanced Example(Points of interest)
+---
+
+## Advanced Example(Points of interest)
 
 The advanced example uses *node-lite-router* to publish the endpoints of the api, and basically represents a points of interest api(POI).
 
@@ -78,6 +55,49 @@ Endpoint|verb|Description
 To test this api use [poi-api.postman_collection](examples/advanced/poi-api.postman_collection.json)
 
 [You can check the example Here](examples/advanced/README.md)
+
+
+# Testing
+
+## Run all tests
+
+To run all unit and integration tests:
+
+```bash
+npm test
+```
+
+## Run unit tests only
+
+To run the unit tests use the following command:
+
+```bash
+npm run unit-test
+```
+
+## Run integ tests only
+
+To run the integration tests use the following command:
+
+```bash
+npm run integ-test
+```
+
+# Generate ESDOC Documentation
+
+To geneate the ESDOC documentation use the following command:
+
+```bash
+npm run docs
+```
+
+# Running the coverage
+To run the coverage report use the following command
+```bash
+npm run coverage
+```
+---
+
 # Why sequelize-resource-controller(My motivations)?
 
 When writing CRUD based REST Apis with a relational database backend, you'll often find yourself loosing time with some stuff like implementing transactions, writing validations, and just every step possible to convert your database model into an Resource representation. 
@@ -98,9 +118,6 @@ This module also uses google API design in terms of resource responses, error ha
 
 * This module has some cool eslinting around.
 
-# Documentation
-
-You can check [ESDOC documentation](https://mvillarrealb.github.io/sequelize-resource-controller/)
 
 # ROADMAP
 
