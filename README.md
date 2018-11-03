@@ -1,5 +1,11 @@
 # sequelize-resource-controller
 
+[![npm version](https://img.shields.io/npm/v/sequelize-resource-controller.svg)](https://www.npmjs.com/package/sequelize)
+
+[![Build Status](https://travis-ci.org/mvillarrealb/sequelize-resource-controller.svg?branch=master)](https://travis-ci.org/mvillarrealb/sequelize-resource-controller)
+
+![node](https://img.shields.io/node/v/sequelize-resource-controller.svg)
+
 sequelize-resource-controller is a REST Resource abstraction layer, wich handles all the burden of creating transactions, handling rollbacks and formatting responses for your Resource based Api with sequelize. 
 
 Provides support for Restify and Express, two of the most popular http frameworks for nodejs.

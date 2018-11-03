@@ -1,17 +1,19 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const mockApi = require('../util/mockApi');
+const MockApi = require('../util/ExpressApi');
 
 const API_BASE_URL = 'http://localhost:8000';
 const { expect } = chai;
 chai.use(chaiHttp);
 
+const apiInstance = new MockApi();
+
 before(done => {
-  mockApi.start(8000, 'express', done);
+  apiInstance.start(8000, done);
 });
 
 after(done => {
-  mockApi.stop(done);
+  apiInstance.stop(done);
 });
 
 describe('Express Controller integration tests', () => {
@@ -41,7 +43,7 @@ describe('Express Controller integration tests', () => {
         .post('/v1/todos')
         .type('application/json')
         .send({});
-      expect(response).to.have.status(400);
+      expect(response).to.have.status(412);
       expect(response).to.be.json;
       expect(response.body).to.have.property('status', 'FAILED_PRECONDITION');
       expect(response.body).to.have.property('code');
@@ -70,8 +72,9 @@ describe('Express Controller integration tests', () => {
         .request(API_BASE_URL)
         .get('/v1/todos')
         .query({
-          offset: -1
-        });
+          offset: '-1'
+        })
+        .send();
       //console.log(response.body);
       expect(response).to.be.json;
       expect(response.body).to.have.property('status');
@@ -84,7 +87,7 @@ describe('Express Controller integration tests', () => {
   context('HTTP GET by Id request', () => {
     it('Should find a resource by its Ids', async () => {
       const name = 'TODO TO BE FOUND';
-      const { response } = await mockApi.insertMockRecord({ name });
+      const { response } = await apiInstance.insertMockRecord({ name });
       const { todo_id } = response;
       const res = await chai
         .request(API_BASE_URL)
@@ -117,7 +120,7 @@ describe('Express Controller integration tests', () => {
 
   context('HTTP PUT request', () => {
     it('Update an existing resource by its id', async () => {
-      const { response } = await mockApi.insertMockRecord({ name: 'a todo :D' });
+      const { response } = await apiInstance.insertMockRecord({ name: 'a todo :D' });
       const { todo_id } = response;
       const name = 'This todo was updated :D';
       const is_done = true;
@@ -137,7 +140,7 @@ describe('Express Controller integration tests', () => {
     });
 
     it('Should generate errors on update a resource', async () => {
-      const { response } = await mockApi.insertMockRecord({ name: 'a todo :D' });
+      const { response } = await apiInstance.insertMockRecord({ name: 'a todo :D' });
       const { todo_id } = response;
       const res = await chai
         .request(API_BASE_URL)
@@ -154,7 +157,7 @@ describe('Express Controller integration tests', () => {
 
   context('HTTP DELETE request', () => {
     it('Should delete an existing resource by its id', async () => {
-      const { response } = await mockApi.insertMockRecord({ name: 'Other todo' });
+      const { response } = await apiInstance.insertMockRecord({ name: 'Other todo' });
       const { todo_id } = response;
       const res = await chai
         .request(API_BASE_URL)
