@@ -1,6 +1,6 @@
 # sequelize-resource-controller
 
-[![npm version](https://img.shields.io/npm/v/sequelize-resource-controller.svg)](https://www.npmjs.com/package/sequelize)
+[![npm version](https://img.shields.io/npm/v/sequelize-resource-controller.svg)](https://www.npmjs.com/package/sequelize-resource-controller)
 
 [![Build Status](https://travis-ci.org/mvillarrealb/sequelize-resource-controller.svg?branch=master)](https://travis-ci.org/mvillarrealb/sequelize-resource-controller)
 
