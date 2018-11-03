@@ -100,7 +100,7 @@ This module also uses google API design in terms of resource responses, error ha
 
 # Documentation
 
-You can check ESDOC documentation
+You can check [ESDOC documentation](https://mvillarrealb.github.io/sequelize-resource-controller/)
 
 # ROADMAP
 
