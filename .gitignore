@@ -1,6 +1,5 @@
 .nyc_output
 .vscode/
-esdoc
 node_modules
 coverage
 package-lock.json

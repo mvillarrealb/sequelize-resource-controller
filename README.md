@@ -1,10 +1,10 @@
 # sequelize-resource-controller
 
 [![npm version](https://img.shields.io/npm/v/sequelize-resource-controller.svg)](https://www.npmjs.com/package/sequelize-resource-controller)
-
 [![Build Status](https://travis-ci.org/mvillarrealb/sequelize-resource-controller.svg?branch=master)](https://travis-ci.org/mvillarrealb/sequelize-resource-controller)
-
+[![codecov](https://codecov.io/gh/mvillarrealb/sequelize-resource-controlle/branch/master/graph/badge.svg)](https://codecov.io/gh/mvillarrealb/sequelize-resource-controller)
 ![node](https://img.shields.io/node/v/sequelize-resource-controller.svg)
+[![License](https://img.shields.io/npm/l/sequelize-resource-controller.svg?maxAge=2592000?style=plastic)](https://github.com/mvillarrealb/sequelize-resource-controller/blob/master/LICENSE)
 
 sequelize-resource-controller is a REST Resource abstraction layer, wich handles all the burden of creating transactions, handling rollbacks and formatting responses for your Resource based Api with sequelize. 
 
@@ -97,6 +97,10 @@ This module also uses google API design in terms of resource responses, error ha
 * This module was written using async/await so you it is easier to handle the tricky parts.
 
 * This module has some cool eslinting around.
+
+# Documentation
+
+You can check ESDOC documentation
 
 # ROADMAP
 
