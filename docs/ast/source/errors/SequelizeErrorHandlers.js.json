@@ -1,0 +1,6766 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 1503,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 38,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 1503,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 38,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "VariableDeclaration",
+        "start": 0,
+        "end": 41,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 41
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 6,
+            "end": 40,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 6
+              },
+              "end": {
+                "line": 1,
+                "column": 40
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 6,
+              "end": 15,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 6
+                },
+                "end": {
+                  "line": 1,
+                  "column": 15
+                },
+                "identifierName": "ERROR_MAP"
+              },
+              "name": "ERROR_MAP"
+            },
+            "init": {
+              "type": "CallExpression",
+              "start": 18,
+              "end": 40,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 18
+                },
+                "end": {
+                  "line": 1,
+                  "column": 40
+                }
+              },
+              "callee": {
+                "type": "Identifier",
+                "start": 18,
+                "end": 25,
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 18
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 25
+                  },
+                  "identifierName": "require"
+                },
+                "name": "require"
+              },
+              "arguments": [
+                {
+                  "type": "StringLiteral",
+                  "start": 26,
+                  "end": 39,
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 39
+                    }
+                  },
+                  "extra": {
+                    "rawValue": "./error_map",
+                    "raw": "'./error_map'"
+                  },
+                  "value": "./error_map"
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "const",
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Defines Sequelize error handling map,\n * on every sequelize's error it will map\n * the corresponding exception to a status code\n * present on error_map.js, except for\n * SequelizeValidationError, on this particular\n * case whe will not use formatStackTrace\n * to extract the detail field, it will\n * extract the errors from the original\n * exception and map them into a new detail\n *\n ",
+            "start": 42,
+            "end": 436,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 13,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExpressionStatement",
+        "start": 437,
+        "end": 1502,
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 0
+          },
+          "end": {
+            "line": 37,
+            "column": 2
+          }
+        },
+        "expression": {
+          "type": "AssignmentExpression",
+          "start": 437,
+          "end": 1501,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 37,
+              "column": 1
+            }
+          },
+          "operator": "=",
+          "left": {
+            "type": "MemberExpression",
+            "start": 437,
+            "end": 451,
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 0
+              },
+              "end": {
+                "line": 14,
+                "column": 14
+              }
+            },
+            "object": {
+              "type": "Identifier",
+              "start": 437,
+              "end": 443,
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 0
+                },
+                "end": {
+                  "line": 14,
+                  "column": 6
+                },
+                "identifierName": "module"
+              },
+              "name": "module",
+              "leadingComments": null
+            },
+            "property": {
+              "type": "Identifier",
+              "start": 444,
+              "end": 451,
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 7
+                },
+                "end": {
+                  "line": 14,
+                  "column": 14
+                },
+                "identifierName": "exports"
+              },
+              "name": "exports"
+            },
+            "computed": false,
+            "leadingComments": null
+          },
+          "right": {
+            "type": "ObjectExpression",
+            "start": 454,
+            "end": 1501,
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 17
+              },
+              "end": {
+                "line": 37,
+                "column": 1
+              }
+            },
+            "properties": [
+              {
+                "type": "ObjectProperty",
+                "start": 458,
+                "end": 755,
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 22,
+                    "column": 3
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 458,
+                  "end": 482,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 26
+                    },
+                    "identifierName": "SequelizeValidationError"
+                  },
+                  "name": "SequelizeValidationError"
+                },
+                "value": {
+                  "type": "ArrowFunctionExpression",
+                  "start": 484,
+                  "end": 755,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 28
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 3
+                    }
+                  },
+                  "id": null,
+                  "generator": false,
+                  "expression": false,
+                  "async": false,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "start": 484,
+                      "end": 492,
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 28
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 36
+                        },
+                        "identifierName": "errorObj"
+                      },
+                      "name": "errorObj"
+                    }
+                  ],
+                  "body": {
+                    "type": "BlockStatement",
+                    "start": 496,
+                    "end": 755,
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 40
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 3
+                      }
+                    },
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "start": 502,
+                        "end": 557,
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 59
+                          }
+                        },
+                        "declarations": [
+                          {
+                            "type": "VariableDeclarator",
+                            "start": 508,
+                            "end": 556,
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 10
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 58
+                              }
+                            },
+                            "id": {
+                              "type": "ObjectPattern",
+                              "start": 508,
+                              "end": 524,
+                              "loc": {
+                                "start": {
+                                  "line": 16,
+                                  "column": 10
+                                },
+                                "end": {
+                                  "line": 16,
+                                  "column": 26
+                                }
+                              },
+                              "properties": [
+                                {
+                                  "type": "ObjectProperty",
+                                  "start": 510,
+                                  "end": 516,
+                                  "loc": {
+                                    "start": {
+                                      "line": 16,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 16,
+                                      "column": 18
+                                    }
+                                  },
+                                  "method": false,
+                                  "shorthand": true,
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "start": 510,
+                                    "end": 516,
+                                    "loc": {
+                                      "start": {
+                                        "line": 16,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "line": 16,
+                                        "column": 18
+                                      },
+                                      "identifierName": "status"
+                                    },
+                                    "name": "status"
+                                  },
+                                  "value": {
+                                    "type": "Identifier",
+                                    "start": 510,
+                                    "end": 516,
+                                    "loc": {
+                                      "start": {
+                                        "line": 16,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "line": 16,
+                                        "column": 18
+                                      },
+                                      "identifierName": "status"
+                                    },
+                                    "name": "status"
+                                  },
+                                  "extra": {
+                                    "shorthand": true
+                                  }
+                                },
+                                {
+                                  "type": "ObjectProperty",
+                                  "start": 518,
+                                  "end": 522,
+                                  "loc": {
+                                    "start": {
+                                      "line": 16,
+                                      "column": 20
+                                    },
+                                    "end": {
+                                      "line": 16,
+                                      "column": 24
+                                    }
+                                  },
+                                  "method": false,
+                                  "shorthand": true,
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "start": 518,
+                                    "end": 522,
+                                    "loc": {
+                                      "start": {
+                                        "line": 16,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "line": 16,
+                                        "column": 24
+                                      },
+                                      "identifierName": "code"
+                                    },
+                                    "name": "code"
+                                  },
+                                  "value": {
+                                    "type": "Identifier",
+                                    "start": 518,
+                                    "end": 522,
+                                    "loc": {
+                                      "start": {
+                                        "line": 16,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "line": 16,
+                                        "column": 24
+                                      },
+                                      "identifierName": "code"
+                                    },
+                                    "name": "code"
+                                  },
+                                  "extra": {
+                                    "shorthand": true
+                                  }
+                                }
+                              ]
+                            },
+                            "init": {
+                              "type": "MemberExpression",
+                              "start": 527,
+                              "end": 556,
+                              "loc": {
+                                "start": {
+                                  "line": 16,
+                                  "column": 29
+                                },
+                                "end": {
+                                  "line": 16,
+                                  "column": 58
+                                }
+                              },
+                              "object": {
+                                "type": "Identifier",
+                                "start": 527,
+                                "end": 536,
+                                "loc": {
+                                  "start": {
+                                    "line": 16,
+                                    "column": 29
+                                  },
+                                  "end": {
+                                    "line": 16,
+                                    "column": 38
+                                  },
+                                  "identifierName": "ERROR_MAP"
+                                },
+                                "name": "ERROR_MAP"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 537,
+                                "end": 556,
+                                "loc": {
+                                  "start": {
+                                    "line": 16,
+                                    "column": 39
+                                  },
+                                  "end": {
+                                    "line": 16,
+                                    "column": 58
+                                  },
+                                  "identifierName": "FAILED_PRECONDITION"
+                                },
+                                "name": "FAILED_PRECONDITION"
+                              },
+                              "computed": false
+                            }
+                          }
+                        ],
+                        "kind": "const"
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "start": 562,
+                        "end": 683,
+                        "loc": {
+                          "start": {
+                            "line": 17,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 20,
+                            "column": 7
+                          }
+                        },
+                        "declarations": [
+                          {
+                            "type": "VariableDeclarator",
+                            "start": 568,
+                            "end": 682,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 10
+                              },
+                              "end": {
+                                "line": 20,
+                                "column": 6
+                              }
+                            },
+                            "id": {
+                              "type": "Identifier",
+                              "start": 568,
+                              "end": 575,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 10
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 17
+                                },
+                                "identifierName": "details"
+                              },
+                              "name": "details"
+                            },
+                            "init": {
+                              "type": "CallExpression",
+                              "start": 578,
+                              "end": 682,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 20
+                                },
+                                "end": {
+                                  "line": 20,
+                                  "column": 6
+                                }
+                              },
+                              "callee": {
+                                "type": "MemberExpression",
+                                "start": 578,
+                                "end": 597,
+                                "loc": {
+                                  "start": {
+                                    "line": 17,
+                                    "column": 20
+                                  },
+                                  "end": {
+                                    "line": 17,
+                                    "column": 39
+                                  }
+                                },
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "start": 578,
+                                  "end": 593,
+                                  "loc": {
+                                    "start": {
+                                      "line": 17,
+                                      "column": 20
+                                    },
+                                    "end": {
+                                      "line": 17,
+                                      "column": 35
+                                    }
+                                  },
+                                  "object": {
+                                    "type": "Identifier",
+                                    "start": 578,
+                                    "end": 586,
+                                    "loc": {
+                                      "start": {
+                                        "line": 17,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "line": 17,
+                                        "column": 28
+                                      },
+                                      "identifierName": "errorObj"
+                                    },
+                                    "name": "errorObj"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "start": 587,
+                                    "end": 593,
+                                    "loc": {
+                                      "start": {
+                                        "line": 17,
+                                        "column": 29
+                                      },
+                                      "end": {
+                                        "line": 17,
+                                        "column": 35
+                                      },
+                                      "identifierName": "errors"
+                                    },
+                                    "name": "errors"
+                                  },
+                                  "computed": false
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "start": 594,
+                                  "end": 597,
+                                  "loc": {
+                                    "start": {
+                                      "line": 17,
+                                      "column": 36
+                                    },
+                                    "end": {
+                                      "line": 17,
+                                      "column": 39
+                                    },
+                                    "identifierName": "map"
+                                  },
+                                  "name": "map"
+                                },
+                                "computed": false
+                              },
+                              "arguments": [
+                                {
+                                  "type": "ArrowFunctionExpression",
+                                  "start": 598,
+                                  "end": 681,
+                                  "loc": {
+                                    "start": {
+                                      "line": 17,
+                                      "column": 40
+                                    },
+                                    "end": {
+                                      "line": 20,
+                                      "column": 5
+                                    }
+                                  },
+                                  "id": null,
+                                  "generator": false,
+                                  "expression": false,
+                                  "async": false,
+                                  "params": [
+                                    {
+                                      "type": "Identifier",
+                                      "start": 598,
+                                      "end": 601,
+                                      "loc": {
+                                        "start": {
+                                          "line": 17,
+                                          "column": 40
+                                        },
+                                        "end": {
+                                          "line": 17,
+                                          "column": 43
+                                        },
+                                        "identifierName": "err"
+                                      },
+                                      "name": "err"
+                                    }
+                                  ],
+                                  "body": {
+                                    "type": "BlockStatement",
+                                    "start": 605,
+                                    "end": 681,
+                                    "loc": {
+                                      "start": {
+                                        "line": 17,
+                                        "column": 47
+                                      },
+                                      "end": {
+                                        "line": 20,
+                                        "column": 5
+                                      }
+                                    },
+                                    "body": [
+                                      {
+                                        "type": "VariableDeclaration",
+                                        "start": 613,
+                                        "end": 643,
+                                        "loc": {
+                                          "start": {
+                                            "line": 18,
+                                            "column": 6
+                                          },
+                                          "end": {
+                                            "line": 18,
+                                            "column": 36
+                                          }
+                                        },
+                                        "declarations": [
+                                          {
+                                            "type": "VariableDeclarator",
+                                            "start": 619,
+                                            "end": 642,
+                                            "loc": {
+                                              "start": {
+                                                "line": 18,
+                                                "column": 12
+                                              },
+                                              "end": {
+                                                "line": 18,
+                                                "column": 35
+                                              }
+                                            },
+                                            "id": {
+                                              "type": "ObjectPattern",
+                                              "start": 619,
+                                              "end": 636,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 18,
+                                                  "column": 12
+                                                },
+                                                "end": {
+                                                  "line": 18,
+                                                  "column": 29
+                                                }
+                                              },
+                                              "properties": [
+                                                {
+                                                  "type": "ObjectProperty",
+                                                  "start": 621,
+                                                  "end": 625,
+                                                  "loc": {
+                                                    "start": {
+                                                      "line": 18,
+                                                      "column": 14
+                                                    },
+                                                    "end": {
+                                                      "line": 18,
+                                                      "column": 18
+                                                    }
+                                                  },
+                                                  "method": false,
+                                                  "shorthand": true,
+                                                  "computed": false,
+                                                  "key": {
+                                                    "type": "Identifier",
+                                                    "start": 621,
+                                                    "end": 625,
+                                                    "loc": {
+                                                      "start": {
+                                                        "line": 18,
+                                                        "column": 14
+                                                      },
+                                                      "end": {
+                                                        "line": 18,
+                                                        "column": 18
+                                                      },
+                                                      "identifierName": "type"
+                                                    },
+                                                    "name": "type"
+                                                  },
+                                                  "value": {
+                                                    "type": "Identifier",
+                                                    "start": 621,
+                                                    "end": 625,
+                                                    "loc": {
+                                                      "start": {
+                                                        "line": 18,
+                                                        "column": 14
+                                                      },
+                                                      "end": {
+                                                        "line": 18,
+                                                        "column": 18
+                                                      },
+                                                      "identifierName": "type"
+                                                    },
+                                                    "name": "type"
+                                                  },
+                                                  "extra": {
+                                                    "shorthand": true
+                                                  }
+                                                },
+                                                {
+                                                  "type": "ObjectProperty",
+                                                  "start": 627,
+                                                  "end": 634,
+                                                  "loc": {
+                                                    "start": {
+                                                      "line": 18,
+                                                      "column": 20
+                                                    },
+                                                    "end": {
+                                                      "line": 18,
+                                                      "column": 27
+                                                    }
+                                                  },
+                                                  "method": false,
+                                                  "shorthand": true,
+                                                  "computed": false,
+                                                  "key": {
+                                                    "type": "Identifier",
+                                                    "start": 627,
+                                                    "end": 634,
+                                                    "loc": {
+                                                      "start": {
+                                                        "line": 18,
+                                                        "column": 20
+                                                      },
+                                                      "end": {
+                                                        "line": 18,
+                                                        "column": 27
+                                                      },
+                                                      "identifierName": "message"
+                                                    },
+                                                    "name": "message"
+                                                  },
+                                                  "value": {
+                                                    "type": "Identifier",
+                                                    "start": 627,
+                                                    "end": 634,
+                                                    "loc": {
+                                                      "start": {
+                                                        "line": 18,
+                                                        "column": 20
+                                                      },
+                                                      "end": {
+                                                        "line": 18,
+                                                        "column": 27
+                                                      },
+                                                      "identifierName": "message"
+                                                    },
+                                                    "name": "message"
+                                                  },
+                                                  "extra": {
+                                                    "shorthand": true
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            "init": {
+                                              "type": "Identifier",
+                                              "start": 639,
+                                              "end": 642,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 18,
+                                                  "column": 32
+                                                },
+                                                "end": {
+                                                  "line": 18,
+                                                  "column": 35
+                                                },
+                                                "identifierName": "err"
+                                              },
+                                              "name": "err"
+                                            }
+                                          }
+                                        ],
+                                        "kind": "const"
+                                      },
+                                      {
+                                        "type": "ReturnStatement",
+                                        "start": 650,
+                                        "end": 675,
+                                        "loc": {
+                                          "start": {
+                                            "line": 19,
+                                            "column": 6
+                                          },
+                                          "end": {
+                                            "line": 19,
+                                            "column": 31
+                                          }
+                                        },
+                                        "argument": {
+                                          "type": "ObjectExpression",
+                                          "start": 657,
+                                          "end": 674,
+                                          "loc": {
+                                            "start": {
+                                              "line": 19,
+                                              "column": 13
+                                            },
+                                            "end": {
+                                              "line": 19,
+                                              "column": 30
+                                            }
+                                          },
+                                          "properties": [
+                                            {
+                                              "type": "ObjectProperty",
+                                              "start": 659,
+                                              "end": 663,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 19,
+                                                  "column": 15
+                                                },
+                                                "end": {
+                                                  "line": 19,
+                                                  "column": 19
+                                                }
+                                              },
+                                              "method": false,
+                                              "shorthand": true,
+                                              "computed": false,
+                                              "key": {
+                                                "type": "Identifier",
+                                                "start": 659,
+                                                "end": 663,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 19,
+                                                    "column": 15
+                                                  },
+                                                  "end": {
+                                                    "line": 19,
+                                                    "column": 19
+                                                  },
+                                                  "identifierName": "type"
+                                                },
+                                                "name": "type"
+                                              },
+                                              "value": {
+                                                "type": "Identifier",
+                                                "start": 659,
+                                                "end": 663,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 19,
+                                                    "column": 15
+                                                  },
+                                                  "end": {
+                                                    "line": 19,
+                                                    "column": 19
+                                                  },
+                                                  "identifierName": "type"
+                                                },
+                                                "name": "type"
+                                              },
+                                              "extra": {
+                                                "shorthand": true
+                                              }
+                                            },
+                                            {
+                                              "type": "ObjectProperty",
+                                              "start": 665,
+                                              "end": 672,
+                                              "loc": {
+                                                "start": {
+                                                  "line": 19,
+                                                  "column": 21
+                                                },
+                                                "end": {
+                                                  "line": 19,
+                                                  "column": 28
+                                                }
+                                              },
+                                              "method": false,
+                                              "shorthand": true,
+                                              "computed": false,
+                                              "key": {
+                                                "type": "Identifier",
+                                                "start": 665,
+                                                "end": 672,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 19,
+                                                    "column": 21
+                                                  },
+                                                  "end": {
+                                                    "line": 19,
+                                                    "column": 28
+                                                  },
+                                                  "identifierName": "message"
+                                                },
+                                                "name": "message"
+                                              },
+                                              "value": {
+                                                "type": "Identifier",
+                                                "start": 665,
+                                                "end": 672,
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 19,
+                                                    "column": 21
+                                                  },
+                                                  "end": {
+                                                    "line": 19,
+                                                    "column": 28
+                                                  },
+                                                  "identifierName": "message"
+                                                },
+                                                "name": "message"
+                                              },
+                                              "extra": {
+                                                "shorthand": true
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "directives": []
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "kind": "const"
+                      },
+                      {
+                        "type": "ReturnStatement",
+                        "start": 688,
+                        "end": 751,
+                        "loc": {
+                          "start": {
+                            "line": 21,
+                            "column": 4
+                          },
+                          "end": {
+                            "line": 21,
+                            "column": 67
+                          }
+                        },
+                        "argument": {
+                          "type": "ObjectExpression",
+                          "start": 695,
+                          "end": 750,
+                          "loc": {
+                            "start": {
+                              "line": 21,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 21,
+                              "column": 66
+                            }
+                          },
+                          "properties": [
+                            {
+                              "type": "ObjectProperty",
+                              "start": 697,
+                              "end": 703,
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 19
+                                }
+                              },
+                              "method": false,
+                              "shorthand": true,
+                              "computed": false,
+                              "key": {
+                                "type": "Identifier",
+                                "start": 697,
+                                "end": 703,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 19
+                                  },
+                                  "identifierName": "status"
+                                },
+                                "name": "status"
+                              },
+                              "value": {
+                                "type": "Identifier",
+                                "start": 697,
+                                "end": 703,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 19
+                                  },
+                                  "identifierName": "status"
+                                },
+                                "name": "status"
+                              },
+                              "extra": {
+                                "shorthand": true
+                              }
+                            },
+                            {
+                              "type": "ObjectProperty",
+                              "start": 705,
+                              "end": 709,
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 21
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 25
+                                }
+                              },
+                              "method": false,
+                              "shorthand": true,
+                              "computed": false,
+                              "key": {
+                                "type": "Identifier",
+                                "start": 705,
+                                "end": 709,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 21
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 25
+                                  },
+                                  "identifierName": "code"
+                                },
+                                "name": "code"
+                              },
+                              "value": {
+                                "type": "Identifier",
+                                "start": 705,
+                                "end": 709,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 21
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 25
+                                  },
+                                  "identifierName": "code"
+                                },
+                                "name": "code"
+                              },
+                              "extra": {
+                                "shorthand": true
+                              }
+                            },
+                            {
+                              "type": "ObjectProperty",
+                              "start": 711,
+                              "end": 739,
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 27
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 55
+                                }
+                              },
+                              "method": false,
+                              "shorthand": false,
+                              "computed": false,
+                              "key": {
+                                "type": "Identifier",
+                                "start": 711,
+                                "end": 718,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 27
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 34
+                                  },
+                                  "identifierName": "message"
+                                },
+                                "name": "message"
+                              },
+                              "value": {
+                                "type": "StringLiteral",
+                                "start": 720,
+                                "end": 739,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 36
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 55
+                                  }
+                                },
+                                "extra": {
+                                  "rawValue": "Validation Failed",
+                                  "raw": "'Validation Failed'"
+                                },
+                                "value": "Validation Failed"
+                              }
+                            },
+                            {
+                              "type": "ObjectProperty",
+                              "start": 741,
+                              "end": 748,
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 57
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 64
+                                }
+                              },
+                              "method": false,
+                              "shorthand": true,
+                              "computed": false,
+                              "key": {
+                                "type": "Identifier",
+                                "start": 741,
+                                "end": 748,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 57
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 64
+                                  },
+                                  "identifierName": "details"
+                                },
+                                "name": "details"
+                              },
+                              "value": {
+                                "type": "Identifier",
+                                "start": 741,
+                                "end": 748,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 57
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 64
+                                  },
+                                  "identifierName": "details"
+                                },
+                                "name": "details"
+                              },
+                              "extra": {
+                                "shorthand": true
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "directives": []
+                  }
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 759,
+                "end": 801,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 44
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 759,
+                  "end": 781,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 24
+                    },
+                    "identifierName": "SequelizeDatabaseError"
+                  },
+                  "name": "SequelizeDatabaseError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 783,
+                  "end": 801,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 44
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 783,
+                    "end": 792,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 35
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 793,
+                    "end": 801,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 44
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 805,
+                "end": 849,
+                "loc": {
+                  "start": {
+                    "line": 24,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 24,
+                    "column": 46
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 805,
+                  "end": 826,
+                  "loc": {
+                    "start": {
+                      "line": 24,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 24,
+                      "column": 23
+                    },
+                    "identifierName": "SequelizeTimeoutError"
+                  },
+                  "name": "SequelizeTimeoutError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 828,
+                  "end": 849,
+                  "loc": {
+                    "start": {
+                      "line": 24,
+                      "column": 25
+                    },
+                    "end": {
+                      "line": 24,
+                      "column": 46
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 828,
+                    "end": 837,
+                    "loc": {
+                      "start": {
+                        "line": 24,
+                        "column": 25
+                      },
+                      "end": {
+                        "line": 24,
+                        "column": 34
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 838,
+                    "end": 849,
+                    "loc": {
+                      "start": {
+                        "line": 24,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 24,
+                        "column": 46
+                      },
+                      "identifierName": "UNAVAILABLE"
+                    },
+                    "name": "UNAVAILABLE"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 853,
+                "end": 918,
+                "loc": {
+                  "start": {
+                    "line": 25,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 25,
+                    "column": 67
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 853,
+                  "end": 887,
+                  "loc": {
+                    "start": {
+                      "line": 25,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 25,
+                      "column": 36
+                    },
+                    "identifierName": "SequelizeForeignKeyConstraintError"
+                  },
+                  "name": "SequelizeForeignKeyConstraintError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 889,
+                  "end": 918,
+                  "loc": {
+                    "start": {
+                      "line": 25,
+                      "column": 38
+                    },
+                    "end": {
+                      "line": 25,
+                      "column": 67
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 889,
+                    "end": 898,
+                    "loc": {
+                      "start": {
+                        "line": 25,
+                        "column": 38
+                      },
+                      "end": {
+                        "line": 25,
+                        "column": 47
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 899,
+                    "end": 918,
+                    "loc": {
+                      "start": {
+                        "line": 25,
+                        "column": 48
+                      },
+                      "end": {
+                        "line": 25,
+                        "column": 67
+                      },
+                      "identifierName": "FAILED_PRECONDITION"
+                    },
+                    "name": "FAILED_PRECONDITION"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 922,
+                "end": 978,
+                "loc": {
+                  "start": {
+                    "line": 26,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 26,
+                    "column": 58
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 922,
+                  "end": 952,
+                  "loc": {
+                    "start": {
+                      "line": 26,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 26,
+                      "column": 32
+                    },
+                    "identifierName": "SequelizeUniqueConstraintError"
+                  },
+                  "name": "SequelizeUniqueConstraintError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 954,
+                  "end": 978,
+                  "loc": {
+                    "start": {
+                      "line": 26,
+                      "column": 34
+                    },
+                    "end": {
+                      "line": 26,
+                      "column": 58
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 954,
+                    "end": 963,
+                    "loc": {
+                      "start": {
+                        "line": 26,
+                        "column": 34
+                      },
+                      "end": {
+                        "line": 26,
+                        "column": 43
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 964,
+                    "end": 978,
+                    "loc": {
+                      "start": {
+                        "line": 26,
+                        "column": 44
+                      },
+                      "end": {
+                        "line": 26,
+                        "column": 58
+                      },
+                      "identifierName": "ALREADY_EXISTS"
+                    },
+                    "name": "ALREADY_EXISTS"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 982,
+                "end": 1029,
+                "loc": {
+                  "start": {
+                    "line": 27,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 27,
+                    "column": 49
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 982,
+                  "end": 1006,
+                  "loc": {
+                    "start": {
+                      "line": 27,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 27,
+                      "column": 26
+                    },
+                    "identifierName": "SequelizeConnectionError"
+                  },
+                  "name": "SequelizeConnectionError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1008,
+                  "end": 1029,
+                  "loc": {
+                    "start": {
+                      "line": 27,
+                      "column": 28
+                    },
+                    "end": {
+                      "line": 27,
+                      "column": 49
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1008,
+                    "end": 1017,
+                    "loc": {
+                      "start": {
+                        "line": 27,
+                        "column": 28
+                      },
+                      "end": {
+                        "line": 27,
+                        "column": 37
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1018,
+                    "end": 1029,
+                    "loc": {
+                      "start": {
+                        "line": 27,
+                        "column": 38
+                      },
+                      "end": {
+                        "line": 27,
+                        "column": 49
+                      },
+                      "identifierName": "UNAVAILABLE"
+                    },
+                    "name": "UNAVAILABLE"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1033,
+                "end": 1087,
+                "loc": {
+                  "start": {
+                    "line": 28,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 28,
+                    "column": 56
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1033,
+                  "end": 1064,
+                  "loc": {
+                    "start": {
+                      "line": 28,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 28,
+                      "column": 33
+                    },
+                    "identifierName": "SequelizeConnectionRefusedError"
+                  },
+                  "name": "SequelizeConnectionRefusedError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1066,
+                  "end": 1087,
+                  "loc": {
+                    "start": {
+                      "line": 28,
+                      "column": 35
+                    },
+                    "end": {
+                      "line": 28,
+                      "column": 56
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1066,
+                    "end": 1075,
+                    "loc": {
+                      "start": {
+                        "line": 28,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 28,
+                        "column": 44
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1076,
+                    "end": 1087,
+                    "loc": {
+                      "start": {
+                        "line": 28,
+                        "column": 45
+                      },
+                      "end": {
+                        "line": 28,
+                        "column": 56
+                      },
+                      "identifierName": "UNAVAILABLE"
+                    },
+                    "name": "UNAVAILABLE"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1091,
+                "end": 1146,
+                "loc": {
+                  "start": {
+                    "line": 29,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 57
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1091,
+                  "end": 1117,
+                  "loc": {
+                    "start": {
+                      "line": 29,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 29,
+                      "column": 28
+                    },
+                    "identifierName": "SequelizeAccessDeniedError"
+                  },
+                  "name": "SequelizeAccessDeniedError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1119,
+                  "end": 1146,
+                  "loc": {
+                    "start": {
+                      "line": 29,
+                      "column": 30
+                    },
+                    "end": {
+                      "line": 29,
+                      "column": 57
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1119,
+                    "end": 1128,
+                    "loc": {
+                      "start": {
+                        "line": 29,
+                        "column": 30
+                      },
+                      "end": {
+                        "line": 29,
+                        "column": 39
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1129,
+                    "end": 1146,
+                    "loc": {
+                      "start": {
+                        "line": 29,
+                        "column": 40
+                      },
+                      "end": {
+                        "line": 29,
+                        "column": 57
+                      },
+                      "identifierName": "PERMISSION_DENIED"
+                    },
+                    "name": "PERMISSION_DENIED"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1150,
+                "end": 1196,
+                "loc": {
+                  "start": {
+                    "line": 30,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 48
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1150,
+                  "end": 1176,
+                  "loc": {
+                    "start": {
+                      "line": 30,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 30,
+                      "column": 28
+                    },
+                    "identifierName": "SequelizeHostNotFoundError"
+                  },
+                  "name": "SequelizeHostNotFoundError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1178,
+                  "end": 1196,
+                  "loc": {
+                    "start": {
+                      "line": 30,
+                      "column": 30
+                    },
+                    "end": {
+                      "line": 30,
+                      "column": 48
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1178,
+                    "end": 1187,
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 30
+                      },
+                      "end": {
+                        "line": 30,
+                        "column": 39
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1188,
+                    "end": 1196,
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 40
+                      },
+                      "end": {
+                        "line": 30,
+                        "column": 48
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1200,
+                "end": 1250,
+                "loc": {
+                  "start": {
+                    "line": 31,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 31,
+                    "column": 52
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1200,
+                  "end": 1230,
+                  "loc": {
+                    "start": {
+                      "line": 31,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 31,
+                      "column": 32
+                    },
+                    "identifierName": "SequelizeHostNotReachableError"
+                  },
+                  "name": "SequelizeHostNotReachableError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1232,
+                  "end": 1250,
+                  "loc": {
+                    "start": {
+                      "line": 31,
+                      "column": 34
+                    },
+                    "end": {
+                      "line": 31,
+                      "column": 52
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1232,
+                    "end": 1241,
+                    "loc": {
+                      "start": {
+                        "line": 31,
+                        "column": 34
+                      },
+                      "end": {
+                        "line": 31,
+                        "column": 43
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1242,
+                    "end": 1250,
+                    "loc": {
+                      "start": {
+                        "line": 31,
+                        "column": 44
+                      },
+                      "end": {
+                        "line": 31,
+                        "column": 52
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1254,
+                "end": 1305,
+                "loc": {
+                  "start": {
+                    "line": 32,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 32,
+                    "column": 53
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1254,
+                  "end": 1285,
+                  "loc": {
+                    "start": {
+                      "line": 32,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 32,
+                      "column": 33
+                    },
+                    "identifierName": "SequelizeInvalidConnectionError"
+                  },
+                  "name": "SequelizeInvalidConnectionError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1287,
+                  "end": 1305,
+                  "loc": {
+                    "start": {
+                      "line": 32,
+                      "column": 35
+                    },
+                    "end": {
+                      "line": 32,
+                      "column": 53
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1287,
+                    "end": 1296,
+                    "loc": {
+                      "start": {
+                        "line": 32,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 32,
+                        "column": 44
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1297,
+                    "end": 1305,
+                    "loc": {
+                      "start": {
+                        "line": 32,
+                        "column": 45
+                      },
+                      "end": {
+                        "line": 32,
+                        "column": 53
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1309,
+                "end": 1361,
+                "loc": {
+                  "start": {
+                    "line": 33,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 33,
+                    "column": 54
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1309,
+                  "end": 1341,
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 33,
+                      "column": 34
+                    },
+                    "identifierName": "SequelizeConnectionTimedOutError"
+                  },
+                  "name": "SequelizeConnectionTimedOutError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1343,
+                  "end": 1361,
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 36
+                    },
+                    "end": {
+                      "line": 33,
+                      "column": 54
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1343,
+                    "end": 1352,
+                    "loc": {
+                      "start": {
+                        "line": 33,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 45
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1353,
+                    "end": 1361,
+                    "loc": {
+                      "start": {
+                        "line": 33,
+                        "column": 46
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 54
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1365,
+                "end": 1407,
+                "loc": {
+                  "start": {
+                    "line": 34,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 34,
+                    "column": 44
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1365,
+                  "end": 1387,
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 34,
+                      "column": 24
+                    },
+                    "identifierName": "SequelizeInstanceError"
+                  },
+                  "name": "SequelizeInstanceError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1389,
+                  "end": 1407,
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 34,
+                      "column": 44
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1389,
+                    "end": 1398,
+                    "loc": {
+                      "start": {
+                        "line": 34,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 34,
+                        "column": 35
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1399,
+                    "end": 1407,
+                    "loc": {
+                      "start": {
+                        "line": 34,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 34,
+                        "column": 44
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1411,
+                "end": 1456,
+                "loc": {
+                  "start": {
+                    "line": 35,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 35,
+                    "column": 47
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1411,
+                  "end": 1436,
+                  "loc": {
+                    "start": {
+                      "line": 35,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 35,
+                      "column": 27
+                    },
+                    "identifierName": "SequelizeEmptyResultError"
+                  },
+                  "name": "SequelizeEmptyResultError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1438,
+                  "end": 1456,
+                  "loc": {
+                    "start": {
+                      "line": 35,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 35,
+                      "column": 47
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1438,
+                    "end": 1447,
+                    "loc": {
+                      "start": {
+                        "line": 35,
+                        "column": 29
+                      },
+                      "end": {
+                        "line": 35,
+                        "column": 38
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1448,
+                    "end": 1456,
+                    "loc": {
+                      "start": {
+                        "line": 35,
+                        "column": 39
+                      },
+                      "end": {
+                        "line": 35,
+                        "column": 47
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 1460,
+                "end": 1499,
+                "loc": {
+                  "start": {
+                    "line": 36,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 36,
+                    "column": 41
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1460,
+                  "end": 1479,
+                  "loc": {
+                    "start": {
+                      "line": 36,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 36,
+                      "column": 21
+                    },
+                    "identifierName": "SequelizeQueryError"
+                  },
+                  "name": "SequelizeQueryError"
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "start": 1481,
+                  "end": 1499,
+                  "loc": {
+                    "start": {
+                      "line": 36,
+                      "column": 23
+                    },
+                    "end": {
+                      "line": 36,
+                      "column": 41
+                    }
+                  },
+                  "object": {
+                    "type": "Identifier",
+                    "start": 1481,
+                    "end": 1490,
+                    "loc": {
+                      "start": {
+                        "line": 36,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 36,
+                        "column": 32
+                      },
+                      "identifierName": "ERROR_MAP"
+                    },
+                    "name": "ERROR_MAP"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "start": 1491,
+                    "end": 1499,
+                    "loc": {
+                      "start": {
+                        "line": 36,
+                        "column": 33
+                      },
+                      "end": {
+                        "line": 36,
+                        "column": 41
+                      },
+                      "identifierName": "INTERNAL"
+                    },
+                    "name": "INTERNAL"
+                  },
+                  "computed": false
+                }
+              }
+            ]
+          },
+          "leadingComments": null
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Defines Sequelize error handling map,\n * on every sequelize's error it will map\n * the corresponding exception to a status code\n * present on error_map.js, except for\n * SequelizeValidationError, on this particular\n * case whe will not use formatStackTrace\n * to extract the detail field, it will\n * extract the errors from the original\n * exception and map them into a new detail\n *\n ",
+            "start": 42,
+            "end": 436,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 13,
+                "column": 3
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Defines Sequelize error handling map,\n * on every sequelize's error it will map\n * the corresponding exception to a status code\n * present on error_map.js, except for\n * SequelizeValidationError, on this particular\n * case whe will not use formatStackTrace\n * to extract the detail field, it will\n * extract the errors from the original\n * exception and map them into a new detail\n *\n ",
+      "start": 42,
+      "end": 436,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 0,
+      "end": 5,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 6,
+      "end": 15,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 6
+        },
+        "end": {
+          "line": 1,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 16,
+      "end": 17,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 16
+        },
+        "end": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "require",
+      "start": 18,
+      "end": 25,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 18
+        },
+        "end": {
+          "line": 1,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 25,
+      "end": 26,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 25
+        },
+        "end": {
+          "line": 1,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./error_map",
+      "start": 26,
+      "end": 39,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 26
+        },
+        "end": {
+          "line": 1,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 39,
+      "end": 40,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 39
+        },
+        "end": {
+          "line": 1,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 40,
+      "end": 41,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 40
+        },
+        "end": {
+          "line": 1,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Defines Sequelize error handling map,\n * on every sequelize's error it will map\n * the corresponding exception to a status code\n * present on error_map.js, except for\n * SequelizeValidationError, on this particular\n * case whe will not use formatStackTrace\n * to extract the detail field, it will\n * extract the errors from the original\n * exception and map them into a new detail\n *\n ",
+      "start": 42,
+      "end": 436,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "module",
+      "start": 437,
+      "end": 443,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 443,
+      "end": 444,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 6
+        },
+        "end": {
+          "line": 14,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "exports",
+      "start": 444,
+      "end": 451,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 7
+        },
+        "end": {
+          "line": 14,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 452,
+      "end": 453,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 15
+        },
+        "end": {
+          "line": 14,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 454,
+      "end": 455,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 17
+        },
+        "end": {
+          "line": 14,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeValidationError",
+      "start": 458,
+      "end": 482,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 482,
+      "end": 483,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 26
+        },
+        "end": {
+          "line": 15,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "errorObj",
+      "start": 484,
+      "end": 492,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 28
+        },
+        "end": {
+          "line": 15,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 493,
+      "end": 495,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 37
+        },
+        "end": {
+          "line": 15,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 496,
+      "end": 497,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 40
+        },
+        "end": {
+          "line": 15,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 502,
+      "end": 507,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 4
+        },
+        "end": {
+          "line": 16,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 508,
+      "end": 509,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 10
+        },
+        "end": {
+          "line": 16,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "status",
+      "start": 510,
+      "end": 516,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 12
+        },
+        "end": {
+          "line": 16,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 516,
+      "end": 517,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 18
+        },
+        "end": {
+          "line": 16,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "code",
+      "start": 518,
+      "end": 522,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 20
+        },
+        "end": {
+          "line": 16,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 523,
+      "end": 524,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 25
+        },
+        "end": {
+          "line": 16,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 525,
+      "end": 526,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 27
+        },
+        "end": {
+          "line": 16,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 527,
+      "end": 536,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 29
+        },
+        "end": {
+          "line": 16,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 536,
+      "end": 537,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 38
+        },
+        "end": {
+          "line": 16,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "FAILED_PRECONDITION",
+      "start": 537,
+      "end": 556,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 39
+        },
+        "end": {
+          "line": 16,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 556,
+      "end": 557,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 58
+        },
+        "end": {
+          "line": 16,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 562,
+      "end": 567,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 4
+        },
+        "end": {
+          "line": 17,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "details",
+      "start": 568,
+      "end": 575,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 10
+        },
+        "end": {
+          "line": 17,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 576,
+      "end": 577,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 18
+        },
+        "end": {
+          "line": 17,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "errorObj",
+      "start": 578,
+      "end": 586,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 20
+        },
+        "end": {
+          "line": 17,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 586,
+      "end": 587,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 28
+        },
+        "end": {
+          "line": 17,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "errors",
+      "start": 587,
+      "end": 593,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 29
+        },
+        "end": {
+          "line": 17,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 593,
+      "end": 594,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 35
+        },
+        "end": {
+          "line": 17,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "map",
+      "start": 594,
+      "end": 597,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 36
+        },
+        "end": {
+          "line": 17,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 597,
+      "end": 598,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 39
+        },
+        "end": {
+          "line": 17,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "err",
+      "start": 598,
+      "end": 601,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 40
+        },
+        "end": {
+          "line": 17,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 602,
+      "end": 604,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 44
+        },
+        "end": {
+          "line": 17,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 605,
+      "end": 606,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 47
+        },
+        "end": {
+          "line": 17,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 613,
+      "end": 618,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 6
+        },
+        "end": {
+          "line": 18,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 619,
+      "end": 620,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 12
+        },
+        "end": {
+          "line": 18,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "type",
+      "start": 621,
+      "end": 625,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 14
+        },
+        "end": {
+          "line": 18,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 625,
+      "end": 626,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 18
+        },
+        "end": {
+          "line": 18,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "message",
+      "start": 627,
+      "end": 634,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 20
+        },
+        "end": {
+          "line": 18,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 635,
+      "end": 636,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 28
+        },
+        "end": {
+          "line": 18,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 637,
+      "end": 638,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 30
+        },
+        "end": {
+          "line": 18,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "err",
+      "start": 639,
+      "end": 642,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 32
+        },
+        "end": {
+          "line": 18,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 642,
+      "end": 643,
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 35
+        },
+        "end": {
+          "line": 18,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 650,
+      "end": 656,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 6
+        },
+        "end": {
+          "line": 19,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 657,
+      "end": 658,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 13
+        },
+        "end": {
+          "line": 19,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "type",
+      "start": 659,
+      "end": 663,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 15
+        },
+        "end": {
+          "line": 19,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 663,
+      "end": 664,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 19
+        },
+        "end": {
+          "line": 19,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "message",
+      "start": 665,
+      "end": 672,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 21
+        },
+        "end": {
+          "line": 19,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 673,
+      "end": 674,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 29
+        },
+        "end": {
+          "line": 19,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 674,
+      "end": 675,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 30
+        },
+        "end": {
+          "line": 19,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 680,
+      "end": 681,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 4
+        },
+        "end": {
+          "line": 20,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 681,
+      "end": 682,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 5
+        },
+        "end": {
+          "line": 20,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 682,
+      "end": 683,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 6
+        },
+        "end": {
+          "line": 20,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 688,
+      "end": 694,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 4
+        },
+        "end": {
+          "line": 21,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 695,
+      "end": 696,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 11
+        },
+        "end": {
+          "line": 21,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "status",
+      "start": 697,
+      "end": 703,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 13
+        },
+        "end": {
+          "line": 21,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 703,
+      "end": 704,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 19
+        },
+        "end": {
+          "line": 21,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "code",
+      "start": 705,
+      "end": 709,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 21
+        },
+        "end": {
+          "line": 21,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 709,
+      "end": 710,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 25
+        },
+        "end": {
+          "line": 21,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "message",
+      "start": 711,
+      "end": 718,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 27
+        },
+        "end": {
+          "line": 21,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 718,
+      "end": 719,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 34
+        },
+        "end": {
+          "line": 21,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Validation Failed",
+      "start": 720,
+      "end": 739,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 36
+        },
+        "end": {
+          "line": 21,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 739,
+      "end": 740,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 55
+        },
+        "end": {
+          "line": 21,
+          "column": 56
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "details",
+      "start": 741,
+      "end": 748,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 57
+        },
+        "end": {
+          "line": 21,
+          "column": 64
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 749,
+      "end": 750,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 65
+        },
+        "end": {
+          "line": 21,
+          "column": 66
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 750,
+      "end": 751,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 66
+        },
+        "end": {
+          "line": 21,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 754,
+      "end": 755,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 2
+        },
+        "end": {
+          "line": 22,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 755,
+      "end": 756,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 3
+        },
+        "end": {
+          "line": 22,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeDatabaseError",
+      "start": 759,
+      "end": 781,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 2
+        },
+        "end": {
+          "line": 23,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 781,
+      "end": 782,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 24
+        },
+        "end": {
+          "line": 23,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 783,
+      "end": 792,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 26
+        },
+        "end": {
+          "line": 23,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 792,
+      "end": 793,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 35
+        },
+        "end": {
+          "line": 23,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 793,
+      "end": 801,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 36
+        },
+        "end": {
+          "line": 23,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 801,
+      "end": 802,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 44
+        },
+        "end": {
+          "line": 23,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeTimeoutError",
+      "start": 805,
+      "end": 826,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 24,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 826,
+      "end": 827,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 23
+        },
+        "end": {
+          "line": 24,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 828,
+      "end": 837,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 25
+        },
+        "end": {
+          "line": 24,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 837,
+      "end": 838,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 34
+        },
+        "end": {
+          "line": 24,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "UNAVAILABLE",
+      "start": 838,
+      "end": 849,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 35
+        },
+        "end": {
+          "line": 24,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 849,
+      "end": 850,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 46
+        },
+        "end": {
+          "line": 24,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeForeignKeyConstraintError",
+      "start": 853,
+      "end": 887,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 2
+        },
+        "end": {
+          "line": 25,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 887,
+      "end": 888,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 36
+        },
+        "end": {
+          "line": 25,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 889,
+      "end": 898,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 38
+        },
+        "end": {
+          "line": 25,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 898,
+      "end": 899,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 47
+        },
+        "end": {
+          "line": 25,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "FAILED_PRECONDITION",
+      "start": 899,
+      "end": 918,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 48
+        },
+        "end": {
+          "line": 25,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 918,
+      "end": 919,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 67
+        },
+        "end": {
+          "line": 25,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeUniqueConstraintError",
+      "start": 922,
+      "end": 952,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 2
+        },
+        "end": {
+          "line": 26,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 952,
+      "end": 953,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 32
+        },
+        "end": {
+          "line": 26,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 954,
+      "end": 963,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 34
+        },
+        "end": {
+          "line": 26,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 963,
+      "end": 964,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 43
+        },
+        "end": {
+          "line": 26,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ALREADY_EXISTS",
+      "start": 964,
+      "end": 978,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 44
+        },
+        "end": {
+          "line": 26,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 978,
+      "end": 979,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 58
+        },
+        "end": {
+          "line": 26,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeConnectionError",
+      "start": 982,
+      "end": 1006,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 2
+        },
+        "end": {
+          "line": 27,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1006,
+      "end": 1007,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 26
+        },
+        "end": {
+          "line": 27,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1008,
+      "end": 1017,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 28
+        },
+        "end": {
+          "line": 27,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1017,
+      "end": 1018,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 37
+        },
+        "end": {
+          "line": 27,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "UNAVAILABLE",
+      "start": 1018,
+      "end": 1029,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 38
+        },
+        "end": {
+          "line": 27,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1029,
+      "end": 1030,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 49
+        },
+        "end": {
+          "line": 27,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeConnectionRefusedError",
+      "start": 1033,
+      "end": 1064,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 2
+        },
+        "end": {
+          "line": 28,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1064,
+      "end": 1065,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 33
+        },
+        "end": {
+          "line": 28,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1066,
+      "end": 1075,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 35
+        },
+        "end": {
+          "line": 28,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1075,
+      "end": 1076,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 44
+        },
+        "end": {
+          "line": 28,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "UNAVAILABLE",
+      "start": 1076,
+      "end": 1087,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 45
+        },
+        "end": {
+          "line": 28,
+          "column": 56
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1087,
+      "end": 1088,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 56
+        },
+        "end": {
+          "line": 28,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeAccessDeniedError",
+      "start": 1091,
+      "end": 1117,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 2
+        },
+        "end": {
+          "line": 29,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1117,
+      "end": 1118,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 28
+        },
+        "end": {
+          "line": 29,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1119,
+      "end": 1128,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 30
+        },
+        "end": {
+          "line": 29,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1128,
+      "end": 1129,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 39
+        },
+        "end": {
+          "line": 29,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "PERMISSION_DENIED",
+      "start": 1129,
+      "end": 1146,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 40
+        },
+        "end": {
+          "line": 29,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1146,
+      "end": 1147,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 57
+        },
+        "end": {
+          "line": 29,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeHostNotFoundError",
+      "start": 1150,
+      "end": 1176,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 2
+        },
+        "end": {
+          "line": 30,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1176,
+      "end": 1177,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 28
+        },
+        "end": {
+          "line": 30,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1178,
+      "end": 1187,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 30
+        },
+        "end": {
+          "line": 30,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1187,
+      "end": 1188,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 39
+        },
+        "end": {
+          "line": 30,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 1188,
+      "end": 1196,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 40
+        },
+        "end": {
+          "line": 30,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1196,
+      "end": 1197,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 48
+        },
+        "end": {
+          "line": 30,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeHostNotReachableError",
+      "start": 1200,
+      "end": 1230,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 2
+        },
+        "end": {
+          "line": 31,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1230,
+      "end": 1231,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 32
+        },
+        "end": {
+          "line": 31,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1232,
+      "end": 1241,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 34
+        },
+        "end": {
+          "line": 31,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1241,
+      "end": 1242,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 43
+        },
+        "end": {
+          "line": 31,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 1242,
+      "end": 1250,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 44
+        },
+        "end": {
+          "line": 31,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1250,
+      "end": 1251,
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 52
+        },
+        "end": {
+          "line": 31,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeInvalidConnectionError",
+      "start": 1254,
+      "end": 1285,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 2
+        },
+        "end": {
+          "line": 32,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1285,
+      "end": 1286,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 33
+        },
+        "end": {
+          "line": 32,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1287,
+      "end": 1296,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 35
+        },
+        "end": {
+          "line": 32,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1296,
+      "end": 1297,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 44
+        },
+        "end": {
+          "line": 32,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 1297,
+      "end": 1305,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 45
+        },
+        "end": {
+          "line": 32,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1305,
+      "end": 1306,
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 53
+        },
+        "end": {
+          "line": 32,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeConnectionTimedOutError",
+      "start": 1309,
+      "end": 1341,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 2
+        },
+        "end": {
+          "line": 33,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1341,
+      "end": 1342,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 34
+        },
+        "end": {
+          "line": 33,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1343,
+      "end": 1352,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 36
+        },
+        "end": {
+          "line": 33,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1352,
+      "end": 1353,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 45
+        },
+        "end": {
+          "line": 33,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 1353,
+      "end": 1361,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 46
+        },
+        "end": {
+          "line": 33,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1361,
+      "end": 1362,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 54
+        },
+        "end": {
+          "line": 33,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeInstanceError",
+      "start": 1365,
+      "end": 1387,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 2
+        },
+        "end": {
+          "line": 34,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1387,
+      "end": 1388,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 24
+        },
+        "end": {
+          "line": 34,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1389,
+      "end": 1398,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 26
+        },
+        "end": {
+          "line": 34,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1398,
+      "end": 1399,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 35
+        },
+        "end": {
+          "line": 34,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 1399,
+      "end": 1407,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 36
+        },
+        "end": {
+          "line": 34,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1407,
+      "end": 1408,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 44
+        },
+        "end": {
+          "line": 34,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeEmptyResultError",
+      "start": 1411,
+      "end": 1436,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 2
+        },
+        "end": {
+          "line": 35,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1436,
+      "end": 1437,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 27
+        },
+        "end": {
+          "line": 35,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1438,
+      "end": 1447,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 29
+        },
+        "end": {
+          "line": 35,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1447,
+      "end": 1448,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 38
+        },
+        "end": {
+          "line": 35,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 1448,
+      "end": 1456,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 39
+        },
+        "end": {
+          "line": 35,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1456,
+      "end": 1457,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 47
+        },
+        "end": {
+          "line": 35,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "SequelizeQueryError",
+      "start": 1460,
+      "end": 1479,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 2
+        },
+        "end": {
+          "line": 36,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1479,
+      "end": 1480,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 21
+        },
+        "end": {
+          "line": 36,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ERROR_MAP",
+      "start": 1481,
+      "end": 1490,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 23
+        },
+        "end": {
+          "line": 36,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1490,
+      "end": 1491,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 32
+        },
+        "end": {
+          "line": 36,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "INTERNAL",
+      "start": 1491,
+      "end": 1499,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 33
+        },
+        "end": {
+          "line": 36,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1500,
+      "end": 1501,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 0
+        },
+        "end": {
+          "line": 37,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1501,
+      "end": 1502,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 1
+        },
+        "end": {
+          "line": 37,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1503,
+      "end": 1503,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 0
+        },
+        "end": {
+          "line": 38,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

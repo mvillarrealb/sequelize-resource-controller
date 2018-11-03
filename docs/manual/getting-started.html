@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | sequelize-resource-controller</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="CRUD REST Api from your sequelize model for restify and express"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sequelize-resource-controller"><meta property="twitter:description" content="CRUD REST Api from your sequelize model for restify and express"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/mvillarrealb/sequelize-resource-controller.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/getting-started.html"><a href="manual/getting-started.html" data-ice="link">Getting Started</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/getting-started.html"><a href="manual/getting-started.html#install-the-module" data-ice="link">Install The module</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/getting-started.html"><a href="manual/getting-started.html#create-your-database-models" data-ice="link">Create your database models</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-an-implementation" data-ice="link">Choose an implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-express-implementation" data-ice="link">Choose Express Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-restify-implementation" data-ice="link">Choose Restify Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-raw-implementation" data-ice="link">Choose Raw Implementation</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html" data-ice="link">Resource Controller</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#import-the-resourcecontroller" data-ice="link">Import the ResourceController</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#creating-an-instance" data-ice="link">Creating an instance</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#inserting-a-model" data-ice="link">Inserting a model</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#finding-models" data-ice="link">Finding Models</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#finding-by-id" data-ice="link">Finding by Id</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#update-a-model" data-ice="link">Update a model</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#destroy-a-model" data-ice="link">Destroy a model</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html" data-ice="link">express Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html#basic-definitions" data-ice="link">Basic definitions</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html#bind-the-endpoints-using-the-controller" data-ice="link">Bind the endpoints using the Controller</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html#start-the-server" data-ice="link">Start the server</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html" data-ice="link">Restify Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html#basic-definitions" data-ice="link">Basic definitions</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html#bind-the-endpoints-using-the-controller" data-ice="link">Bind the endpoints using the Controller</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html#start-the-server" data-ice="link">Start the server</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/extending-controller.html"><a href="manual/extending-controller.html" data-ice="link">Extending Controller</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/extending-controller.html"><a href="manual/extending-controller.html#extension-example" data-ice="link">Extension example</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="getting-started">Getting Started</h1><p>The following steps will help you on getting started on sequelize-resource-controller.</p>
+<h2 id="install-the-module">Install The module</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">npm install --save sequelize-resource-controller</code>
+</code></pre>
+<h2 id="create-your-database-models">Create your database models</h2><p>Sequelize Resource controller needs a sequelize instance and your database models to convert them into resources.</p>
+<p>The following is a recommended practice to use</p>
+<h2 id="choose-an-implementation">Choose an implementation</h2><p>To choose an implementation you just have to extract it from the module
+itself, whether you are using object property deconstructing or plain 
+property access</p>
+<h3 id="choose-express-implementation">Choose Express Implementation</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const { express } = require(&apos;sequelize-resource-controller&apos;);
+//OR
+const expressController = require(&apos;sequelize-resource-controller&apos;).express;</code>
+</code></pre>
+<h3 id="choose-restify-implementation">Choose Restify Implementation</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const { restify } = require(&apos;sequelize-resource-controller&apos;);
+//OR
+const restifyController = require(&apos;sequelize-resource-controller&apos;).restify;</code>
+</code></pre>
+<h3 id="choose-raw-implementation">Choose Raw Implementation</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const { resourceController } = require(&apos;sequelize-resource-controller&apos;);
+//OR
+const resourceController = require(&apos;sequelize-resource-controller&apos;).resourceController;</code>
+</code></pre>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -8,9 +8,9 @@ branches:
 script:
   - npm run lint
   - npm run cover && bash <(curl -s https://codecov.io/bash) -f coverage/lcov.info
-deploy:
-  provider: npm
-  email: erick.slayer.m.v@gmail.com
-  api_key: $NPM_TOKEN
-  on:
-    branch: master
+#deploy:
+#  provider: npm
+#  email: erick.slayer.m.v@gmail.com
+#  api_key: $NPM_TOKEN
+#  on:
+#    branch: master

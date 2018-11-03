@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">lib/resource-controller/methods/findAll.js | sequelize-resource-controller</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="CRUD REST Api from your sequelize model for restify and express"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sequelize-resource-controller"><meta property="twitter:description" content="CRUD REST Api from your sequelize model for restify and express"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/mvillarrealb/sequelize-resource-controller.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/ResourceError.js~ResourceError.html">ResourceError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/SequelizeError.js~SequelizeError.html">SequelizeError</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#implementations">implementations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/BaseRestController.js~BaseRestController.html">BaseRestController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/ExpressResourceController.js~ExpressResourceController.html">ExpressResourceController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#resource-controller">resource-controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/resource-controller/ResourceController.js~ResourceController.html">ResourceController</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/resource-controller/methods/findAll.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">module.exports = debug =&gt; {
+  return async function findAll({
+    limit = 10,
+    offset = 0,
+    sortOrder = null,
+    sortField = null
+  } = {}) {
+    let response = null;
+    let requestArguments = {};
+    try {
+      const isNumber = /\d+/;
+      debug(`Validating limit and offsets parameters limit:${limit} offset:${offset}`);
+      if (!isNumber.test(limit) || !isNumber.test(offset)) {
+        throw this.resourceError(
+          this.ERROR_CODES.INVALID_ARGUMENT,
+          `Limit ${limit} or offset ${offset} are not numbers`
+        );
+      } else if (limit &lt;= 0 || limit &gt; 100) {
+        throw this.resourceError(
+          this.ERROR_CODES.INVALID_ARGUMENT,
+          `Limit ${limit} is lower than zero(0) or is greater than 100(limit per page)`
+        );
+      } else if (offset &lt; 0) {
+        throw this.resourceError(
+          this.ERROR_CODES.INVALID_ARGUMENT,
+          &apos;Negative offset is unsupported&apos;
+        );
+      }
+      requestArguments = { limit, offset };
+
+      debug(&apos;Validating sortOrder and sortfield parameters&apos;);
+
+      if (sortOrder != null &amp;&amp; sortField != null) {
+        if (!this.attributeExists(sortField)) {
+          throw this.resourceError(
+            this.ERROR_CODES.INVALID_ARGUMENT,
+            `Unsupported resource attribute ${sortField}`
+          );
+        } else if (!this.sortOrderSupported(sortOrder)) {
+          throw this.resourceError(
+            this.ERROR_CODES.INVALID_ARGUMENT,
+            `Unsupported sort order ${sortOrder}`
+          );
+        }
+        requestArguments.order = [[sortField, sortOrder]];
+      }
+
+      debug(&apos;Executing findAll with parameters %o &apos;, requestArguments);
+      const results = await this.model.findAll(requestArguments);
+      debug(&apos;Successfully found resources, formatting pagingInfo&apos;);
+
+      const first = { limit, offset: 0 };
+      const next = results.length &lt; limit ? null : { limit, offset: offset + limit };
+      const previous = offset &gt; 0 ? { limit, offset: offset - limit } : null;
+
+      const formattedResponse = {
+        rows: results.map(instance =&gt; instance.get({ plain: true })),
+        paging: { first, next, previous }
+      };
+      debug(&apos;Successfully resolved paging info, resolving promise&apos;);
+      response = { error: null, response: formattedResponse };
+    } catch (error) {
+      response = { error: this.sequelizeError(error), response: null };
+    }
+    return response;
+  };
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">lib/errors/formatStackTrace.js | sequelize-resource-controller</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="CRUD REST Api from your sequelize model for restify and express"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sequelize-resource-controller"><meta property="twitter:description" content="CRUD REST Api from your sequelize model for restify and express"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/mvillarrealb/sequelize-resource-controller.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/ResourceError.js~ResourceError.html">ResourceError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/SequelizeError.js~SequelizeError.html">SequelizeError</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#implementations">implementations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/BaseRestController.js~BaseRestController.html">BaseRestController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/ExpressResourceController.js~ExpressResourceController.html">ExpressResourceController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#resource-controller">resource-controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/resource-controller/ResourceController.js~ResourceController.html">ResourceController</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/errors/formatStackTrace.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const parseStackTrace = errorLine =&gt; {
+  const resultingObj = {};
+  const traceFields = {
+    blamingFile: /\(\S+\)/,
+    blamingLines: /:\d+:\d+/,
+    blamingSource: /at \S+/
+  };
+  Object.keys(traceFields).forEach(traceField =&gt; {
+    const traceRegexp = traceFields[traceField];
+    const matchResult = errorLine.match(traceRegexp);
+    if (matchResult &amp;&amp; matchResult.length &gt; 0) {
+      const [firstMatch] = matchResult;
+      resultingObj[traceField] = firstMatch;
+    }
+  });
+  return resultingObj;
+};
+
+const transformStackTrace = errorLine =&gt; {
+  let line = null;
+  let column = null;
+  let { blamingFile, blamingLines, blamingSource } = errorLine;
+  if (blamingFile != null &amp;&amp; typeof blamingFile === &apos;string&apos;) {
+    blamingFile = blamingFile
+      .replace(&apos;(&apos;, &apos;&apos;)
+      .replace(&apos;)&apos;, &apos;&apos;)
+      .replace(blamingLines, &apos;&apos;);
+  }
+  if (blamingSource != null &amp;&amp; typeof blamingFile === &apos;string&apos;) {
+    blamingSource = blamingSource.replace(&apos;at&apos;, &apos;&apos;).trim();
+  }
+  if (blamingLines != null) {
+    blamingLines = blamingLines.split(&apos;:&apos;);
+    [, line, column] = blamingLines;
+  }
+  return { blamingFile, line, column, blamingSource };
+};
+
+/**
+ * Transforms a stackTrace into an array of objects
+ * containing pretty formatted information about an
+ * original stack trace, for example:
+ * 
+ * Error: ERROR_INTERNO
+    at Object.&lt;anonymous&gt; (/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/resourceErr.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:266:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:596:3)
+
+    Will be mapped into:
+
+ * [{
+    blamingFile: &apos;/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/resourceErr.js&apos;,
+    line: &apos;3&apos;,
+    column: &apos;13&apos;,
+    blamingSource: &apos;Object.&lt;anonymous&gt;&apos;
+  },
+  {
+    blamingFile: &apos;internal/modules/cjs/loader.js&apos;,
+    line: &apos;689&apos;,
+    column: &apos;30&apos;,
+    blamingSource: &apos;Module._compile&apos;
+  },
+  {
+    blamingFile: &apos;internal/modules/cjs/loader.js&apos;,
+    line: &apos;700&apos;,
+    column: &apos;10&apos;,
+    blamingSource: &apos;Object.Module._extensions..js&apos;
+  },
+  {
+    blamingFile: &apos;internal/modules/cjs/loader.js&apos;,
+    line: &apos;599&apos;,
+    column: &apos;32&apos;,
+    blamingSource: &apos;Module.load&apos;
+  },
+  {
+    blamingFile: &apos;internal/modules/cjs/loader.js&apos;,
+    line: &apos;538&apos;,
+    column: &apos;12&apos;,
+    blamingSource: &apos;tryModuleLoad&apos;
+  },
+  {
+    blamingFile: &apos;internal/modules/cjs/loader.js&apos;,
+    line: &apos;530&apos;,
+    column: &apos;3&apos;,
+    blamingSource: &apos;Function.Module._load&apos;
+  },
+  {
+    blamingFile: &apos;internal/modules/cjs/loader.js&apos;,
+    line: &apos;742&apos;,
+    column: &apos;12&apos;,
+    blamingSource: &apos;Function.Module.runMain&apos;
+  },
+  {
+    blamingFile: &apos;internal/bootstrap/node.js&apos;,
+    line: &apos;266&apos;,
+    column: &apos;19&apos;,
+    blamingSource: &apos;startup&apos;
+  },
+  {
+    blamingFile: &apos;internal/bootstrap/node.js&apos;,
+    line: &apos;596&apos;,
+    column: &apos;3&apos;,
+    blamingSource: &apos;bootstrapNodeJSCore&apos;
+  }
+]
+ * @param {String} stackTrace The stacktrace string to be mapped
+ * @return {Array} an array of the containing information of the
+ * stack trace
+ */
+module.exports = stackTrace =&gt; {
+  const formattedStack = stackTrace
+    .split(&apos;\n&apos;)
+    .map(line =&gt; parseStackTrace(line))
+    .filter(line =&gt; Object.keys(line).length &gt; 0)
+    .map(line =&gt; transformStackTrace(line))
+    .filter(stackDetail =&gt; stackDetail.line != null &amp;&amp; stackDetail.column != null);
+  return formattedStack;
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">lib/errors/SequelizeError.js | sequelize-resource-controller</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="CRUD REST Api from your sequelize model for restify and express"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sequelize-resource-controller"><meta property="twitter:description" content="CRUD REST Api from your sequelize model for restify and express"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/mvillarrealb/sequelize-resource-controller.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/ResourceError.js~ResourceError.html">ResourceError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/SequelizeError.js~SequelizeError.html">SequelizeError</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#implementations">implementations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/BaseRestController.js~BaseRestController.html">BaseRestController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/ExpressResourceController.js~ExpressResourceController.html">ExpressResourceController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#resource-controller">resource-controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/resource-controller/ResourceController.js~ResourceController.html">ResourceController</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/errors/SequelizeError.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const SequelizeErrorHandlers = require(&apos;./SequelizeErrorHandlers&apos;);
+const ERROR_MAP = require(&apos;./error_map&apos;);
+const formatStackTrace = require(&apos;./formatStackTrace&apos;);
+/**
+ * SequelizeError represents a custom error
+ * class to handle sequelize&apos;s exception in
+ * a custom way it will parse the error into
+ * a known format and extract the stack trace
+ * into an pretty format.
+ */
+class SequelizeError extends Error {
+  constructor(originalError) {
+    super(originalError.message);
+    this.errorHandlers = SequelizeErrorHandlers;
+    const { status, code, message, details } = this.handleError(originalError);
+    this.status = status;
+    this.code = code;
+    this.message = message;
+    this.details = details;
+
+    Error.captureStackTrace(this, this.constructor);
+  }
+
+  /**
+   * Overrides the default toJSON behavior
+   * to create a pretty printable json Object
+   * @return {Object}
+   */
+  toJSON() {
+    const { status, code, message, details } = this;
+    return { status, code, message, details };
+  }
+
+  handleError(originalError) {
+    let resultingError = {};
+    const { name } = originalError;
+    if (this.errorHandlers &amp;&amp; this.errorHandlers[name]) {
+      const errorHandler = this.errorHandlers[name];
+      if (typeof errorHandler === &apos;function&apos;) {
+        resultingError = errorHandler.call(this, originalError);
+      } else if (typeof errorHandler === &apos;object&apos;) {
+        const { message, stack } = originalError;
+        const { status, code } = errorHandler;
+        const details = formatStackTrace(stack);
+        resultingError = { status, code, message, details };
+      }
+    } else if (name === &apos;ResourceError&apos;) {
+      resultingError = originalError;
+    } else {
+      const { message, stack } = originalError;
+      const { status, code } = ERROR_MAP.UNKNOWN;
+      const details = formatStackTrace(stack);
+      resultingError = { status, code, message, details };
+    }
+    return resultingError;
+  }
+}
+
+module.exports = SequelizeError;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

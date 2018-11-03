@@ -1,0 +1,44 @@
+[
+  {
+    "name": "ResourceController#resourceError",
+    "filePath": "lib/resource-controller/ResourceController.js",
+    "lines": [
+      {
+        "lineNumber": 80,
+        "line": "  /**"
+      },
+      {
+        "lineNumber": 81,
+        "line": "   * @method resourceError"
+      },
+      {
+        "lineNumber": 82,
+        "line": "   * @param {String} errorCode"
+      },
+      {
+        "lineNumber": 83,
+        "line": "   * @param {String} message"
+      },
+      {
+        "lineNumber": 84,
+        "line": "   * @returns {ResourceError}"
+      },
+      {
+        "lineNumber": 85,
+        "line": "   */"
+      },
+      {
+        "lineNumber": 86,
+        "line": "  resourceError(errorType, message) {"
+      }
+    ],
+    "codeParams": [
+      "errorType",
+      "message"
+    ],
+    "docParams": [
+      "errorCode",
+      "message"
+    ]
+  }
+]

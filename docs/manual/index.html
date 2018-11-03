@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | sequelize-resource-controller</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="CRUD REST Api from your sequelize model for restify and express"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sequelize-resource-controller"><meta property="twitter:description" content="CRUD REST Api from your sequelize model for restify and express"></head>
+<body class="layout-container manual-root manual-index" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/mvillarrealb/sequelize-resource-controller.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/getting-started.html"><a href="manual/getting-started.html" data-ice="link">Getting Started</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/getting-started.html"><a href="manual/getting-started.html#install-the-module" data-ice="link">Install The module</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/getting-started.html"><a href="manual/getting-started.html#create-your-database-models" data-ice="link">Create your database models</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-an-implementation" data-ice="link">Choose an implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-express-implementation" data-ice="link">Choose Express Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-restify-implementation" data-ice="link">Choose Restify Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/getting-started.html"><a href="manual/getting-started.html#choose-raw-implementation" data-ice="link">Choose Raw Implementation</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html" data-ice="link">Resource Controller</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#import-the-resourcecontroller" data-ice="link">Import the ResourceController</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#creating-an-instance" data-ice="link">Creating an instance</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#inserting-a-model" data-ice="link">Inserting a model</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#finding-models" data-ice="link">Finding Models</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#finding-by-id" data-ice="link">Finding by Id</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#update-a-model" data-ice="link">Update a model</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/resource-controller.html"><a href="manual/resource-controller.html#destroy-a-model" data-ice="link">Destroy a model</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html" data-ice="link">express Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html#basic-definitions" data-ice="link">Basic definitions</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html#bind-the-endpoints-using-the-controller" data-ice="link">Bind the endpoints using the Controller</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/express-implementation.html"><a href="manual/express-implementation.html#start-the-server" data-ice="link">Start the server</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html" data-ice="link">Restify Implementation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html#basic-definitions" data-ice="link">Basic definitions</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html#bind-the-endpoints-using-the-controller" data-ice="link">Bind the endpoints using the Controller</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/restify-implementation.html"><a href="manual/restify-implementation.html#start-the-server" data-ice="link">Start the server</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/extending-controller.html"><a href="manual/extending-controller.html" data-ice="link">Extending Controller</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/extending-controller.html"><a href="manual/extending-controller.html#extension-example" data-ice="link">Extension example</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown">
+  <div class="manual-user-index" data-ice="manualUserIndex"><h1 id="sequelize-resource-controller">sequelize-resource-controller</h1><p><a href="https://www.npmjs.com/package/sequelize-resource-controller"><img src="https://img.shields.io/npm/v/sequelize-resource-controller.svg" alt="npm version"></a>
+<a href="https://travis-ci.org/mvillarrealb/sequelize-resource-controller"><img src="https://travis-ci.org/mvillarrealb/sequelize-resource-controller.svg?branch=master" alt="Build Status"></a>
+<a href="https://codecov.io/gh/mvillarrealb/sequelize-resource-controller"><img src="https://codecov.io/gh/mvillarrealb/sequelize-resource-controlle/branch/master/graph/badge.svg" alt="codecov"></a>
+<img src="https://img.shields.io/node/v/sequelize-resource-controller.svg" alt="node">
+<a href="https://github.com/mvillarrealb/sequelize-resource-controller/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/sequelize-resource-controller.svg?maxAge=2592000?style=plastic" alt="License"></a></p>
+<p>sequelize-resource-controller is a REST Resource abstraction layer, wich handles all the burden of creating transactions, handling rollbacks and formatting responses for your Resource based Api with sequelize. </p>
+<p>Provides support for Restify and Express, two of the most popular http frameworks for nodejs.</p>
+<h1 id="installation">Installation</h1><pre><code class="lang-bash"><code class="source-code prettyprint">npm install --save sequelize-resource-controller</code>
+</code></pre>
+<h1 id="testing">Testing</h1><h2 id="run-all-tests">Run all tests</h2><pre><code class="lang-bash"><code class="source-code prettyprint">npm test</code>
+</code></pre>
+<h2 id="run-unit-tests-only">Run unit tests only</h2><pre><code class="lang-bash"><code class="source-code prettyprint">npm run unit-test</code>
+</code></pre>
+<h2 id="run-integ-tests-only">Run integ tests only</h2><pre><code class="lang-bash"><code class="source-code prettyprint">npm run integ-test</code>
+</code></pre>
+<hr>
+<h1 id="generate-esdoc-documentation">Generate ESDOC Documentation</h1><pre><code class="lang-bash"><code class="source-code prettyprint">npm run docs</code>
+</code></pre>
+<hr>
+<h1 id="examples">Examples</h1><h1 id="basic-example--todo-list-api-">Basic Example (Todo List Api)</h1><p>The basic example is just a straighforward todo Api with very few files(one file for the database &amp; models, and one for each implementation).</p>
+<table>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>verb</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/todos</td>
+<td>POST</td>
+<td>Creates a new TODO</td>
+</tr>
+<tr>
+<td>/todos</td>
+<td>GET</td>
+<td>Gets all TODOS</td>
+</tr>
+<tr>
+<td>/todos/:todo_id</td>
+<td>GET</td>
+<td>Get a single TODO by id</td>
+</tr>
+<tr>
+<td>/todos/:todo_id</td>
+<td>PUT</td>
+<td>Updates a Todo</td>
+</tr>
+<tr>
+<td>/todos/:todo_id</td>
+<td>DELETE</td>
+<td>Deletes a single todo</td>
+</tr>
+</tbody>
+</table>
+<p>To test this api use <a href="examples/basic/todo-api.postman_collection.json">todo-api.postman_collection</a></p>
+<p><a href="examples/basic/README.md">You can check the example Here</a></p>
+<h1 id="advanced-example-points-of-interest-">Advanced Example(Points of interest)</h1><p>The advanced example uses <em>node-lite-router</em> to publish the endpoints of the api, and basically represents a points of interest api(POI).</p>
+<table>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>verb</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/v1/points-of-interest</td>
+<td>POST</td>
+<td>Creates a point of interest</td>
+</tr>
+<tr>
+<td>/v1/points-of-interest</td>
+<td>GET</td>
+<td>Gets all the points of interest in a paginated fashion</td>
+</tr>
+<tr>
+<td>/v1/points-of-interest/:poi_id</td>
+<td>PUT</td>
+<td>Updates a point of interest</td>
+</tr>
+<tr>
+<td>/v1/points-of-interest/:poi_id</td>
+<td>DELETE</td>
+<td>Deletes a point of interest</td>
+</tr>
+<tr>
+<td>/v1/points-of-interest/:poi_id</td>
+<td>GET</td>
+<td>Finds a particular a point of interest</td>
+</tr>
+</tbody>
+</table>
+<p>To test this api use <a href="examples/advanced/poi-api.postman_collection.json">poi-api.postman_collection</a></p>
+<p><a href="examples/advanced/README.md">You can check the example Here</a></p>
+<h1 id="why-sequelize-resource-controller-my-motivations--">Why sequelize-resource-controller(My motivations)?</h1><p>When writing CRUD based REST Apis with a relational database backend, you&apos;ll often find yourself loosing time with some stuff like implementing transactions, writing validations, and just every step possible to convert your database model into an Resource representation. </p>
+<p>This module will make sure your code looks standarized and CRUD looks like a trivial thing.</p>
+<p>This also addresses to reach the Richardson&apos;s Rest Maturity Model by implementing for you the fancy parts(Basically the Verbs, the status codes, and the Hateoas stuff). </p>
+<p>This module also uses google API design in terms of resource responses, error handling and internal service names(with the exception of our <strong>delete</strong> reserved word :P).</p>
+<h1 id="notes">Notes</h1><ul>
+<li><p>This is the second module of a series of node-modules that I am creating with the main goal of creating node based microservices stacks. This will address the Relational database CRUD APi approach with some <em>database per service around here</em>.</p>
+</li>
+<li><p>It was based on a module that I&apos;ve previously coded back in 2016, this module has a cleaner way of doing things and has less messy parts. It allows you to take more control on some things. Also has support for restify wich is cool.</p>
+</li>
+<li><p>This module was written using async/await so you it is easier to handle the tricky parts.</p>
+</li>
+<li><p>This module has some cool eslinting around.</p>
+</li>
+</ul>
+<h1 id="documentation">Documentation</h1><p>You can check <a href="https://mvillarrealb.github.io/sequelize-resource-controller/">ESDOC documentation</a></p>
+<h1 id="roadmap">ROADMAP</h1><ul>
+<li><p>I18N support:  Will be cool and nice to have translation messages for the supported errors and responses.</p>
+</li>
+<li><p>Extensible support for List endpoint: Basically override the findAll params to include associations or something like that.</p>
+</li>
+</ul>
+</div>
+
+  
+
+  <div class="manual-cards">
+    
+  <div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Getting Started</h1><p>The following steps will help you on getting started on sequelize-resource-controller.</p><h2>Install The module</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">npm install --save sequelize-resource-controller</code>
+</code></pre><h2>Create your database models</h2><p>Sequelize Resource controller needs a sequelize instance and your database models to convert them into resources.</p><p>The following is a recommended practice to use</p><h2>Choose an implementation</h2><p>To choose an implementation you just have to extract it from the module
+itself, whether you are using object property deconstructing or plain 
+property access</p><h3>Choose Express Implementation</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const { express } = require(&apos;sequelize-resource-controller&apos;);
+//OR
+const expressController = require(&apos;sequelize-resource-controller&apos;).express;</code>
+</code></pre><h3>Choose Restify Implementation</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const { restify } = require(&apos;sequelize-resource-controller&apos;);
+//OR
+const restifyController = require(&apos;sequelize-resource-controller&apos;).restify;</code>
+</code></pre><h3>Choose Raw Implementation</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const { resourceController } = require(&apos;sequelize-resource-controller&apos;);
+//OR
+const resourceController = require(&apos;sequelize-resource-controller&apos;).resourceController;</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/getting-started.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Resource Controller</h1><p>The raw implementation its just the internal abstraction layer of your model to manage the CRUD of your sequelize model.</p><h2>Import the ResourceController</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">const { resourceController } = require(&apos;sequelize-resource-controller&apos;);</code>
+</code></pre><h2>Creating an instance</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">const myResource = new resourceController(sequelizeInstance, sequelizeModel);</code>
+</code></pre><h2>Inserting a model</h2><p>To insert a model you just have to use the <strong>create</strong> method, it will receive as parameter an object with the model data. It will return a response object with two properties:</p><ul>
+<li>error: Any exception caught in model creation(including validations)</li>
+<li>response: The created model instance(Sequelize.Model instance)</li>
+</ul><pre><code class="lang-javascript"><code class="source-code prettyprint">
+const {error,response} = await myResource.create({
+  name: &apos;Document your module&apos;
+});
+//response will be a Sequelize.Model Instance
+
+console.log(response);
+
+console.log(response.get({ plain:true }));</code>
+</code></pre><h2>Finding Models</h2><p>To find the models you have to use <strong>findAll</strong> method, this method internally uses findAll sequelize&apos;s method and takes optional parameters:</p><ul>
+<li>limit: Pagination limit(default to 10)</li>
+<li>offset: THe offset of the paging(default is 0)</li>
+<li>sortOrder:The sort order used in the query(default unused)</li>
+<li>sortField: The sort attributes used in the query(default unused)</li>
+</ul><p>This method will return a response object with two properties:</p><ul>
+<li>error: Any exception caught in model querying</li>
+<li>response: a complex object with pagination hinting and the rows found in the query(as plain instances)</li>
+</ul><pre><code class="lang-javascript"><code class="source-code prettyprint">const {error,response} = await myResource.findAll({ limit: 5, offset: 0});
+console.table(response.rows);</code>
+</code></pre><h2>Finding by Id</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">const todo_id = &apos;&apos;;
+const findOneResponse = await myResource.findOne({todo_id});
+console.table(findOneResponse.response);</code>
+</code></pre><h2>Update a model</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">const todo_id = &apos;&apos;;
+const findOneResponse = await myResource.findOne({todo_id});
+const modelToBeUpdated = findOneResponse.response;
+
+const {error,response} = await myResource.update(modelToBeUpdated, {
+  name: &apos;This todo was updated dude&apos;,
+  is_done: true
+});
+
+console.table(response);
+</code>
+</code></pre><h2>Destroy a model</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">const todo_id = &apos;&apos;;
+const findOneResponse = await myResource.findOne({todo_id});
+const victimModel = findOneResponse.response;
+
+const {error,response} = await myResource.destroy(victimModel);
+
+console.table(response);</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/resource-controller.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>express Implementation</h1><p>Same as on the restify implementation you have to follow the given steps:</p><h3>Basic definitions</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const express = require(&apos;express&apos;);
+const expressController = require(&apos;sequelize-resource-controller&apos;).express;
+const { sequelize, models } = require(&apos;db&apos;);
+const app = express();</code>
+</code></pre><h3>Bind the endpoints using the Controller</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const { todo } = models;
+const yourController = new expressController(sequelize,todo);
+const yourRouter = express.Router();
+/**
+ * It is explicitly mandatory to use bind(controller) to avoid scope errors
+ **/
+yourRouter.route(&apos;/&apos;).get(yourController.list.bind(yourController));
+yourRouter.route(&apos;/&apos;).post(yourController.create.bind(yourController));
+yourRouter.route(&apos;/:todo_id&apos;).get(yourController.getOne.bind(yourController));
+/**
+ * To use getOne and destroy you must use a middleware called
+ * getOneMiddleware wich will handle the existence validation(convenient for cool 404 status codes)
+ */
+yourRouter.route(&apos;/:todo_id&apos;).put([
+  yourController.getOneMiddleware.bind(yourController),
+  yourController.update.bind(yourController)
+]);
+
+yourRouter.route(&apos;/:todo_id&apos;).destroy([
+  yourController.getOneMiddleware.bind(yourController),
+  yourController.destroy.bind(yourController)
+]);
+
+app.use(&apos;/v1/todos&apos;,yourRouter);
+</code>
+</code></pre><h3>Start the server</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">app.listen(8000,() =&gt; {
+  console.log(&apos;Ready to rock&apos;);
+});</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/express-implementation.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Restify Implementation</h1><p>The following steps will get you started with sequelize-resource-controller for restify</p><h3>Basic definitions</h3><p>Import the required packages: restify, sequelize and anything else you need.</p><pre><code class="lang-javascript"><code class="source-code prettyprint">const restify = require(&apos;restify&apos;);
+const { Router }  = require(&apos;restify-router&apos;);
+const restifyController = require(&apos;sequelize-resource-controller&apos;).restify;
+const { sequelize, models } = require(&apos;db&apos;);
+const app = restify.createServer();</code>
+</code></pre><h3>Bind the endpoints using the Controller</h3><p>To perform the binding you just have to use every method in your restifyController instance as shown below:</p><pre><code class="lang-javascript"><code class="source-code prettyprint">const { todo } = models;
+const yourController = new restifyController(sequelize,todo);
+const yourRouter = new Router();
+/**
+ * It is explicitly mandatory to use bind(controller) to avoid scope errors
+ **/
+//Define a endpoint to query paginated elements of your model
+yourRouter.get(&apos;/todos&apos;,yourController.list.bind(yourController));
+//Define an endpoint to create a element of your model
+yourRouter.post(&apos;/todos&apos;,yourController.create.bind(yourController));
+
+//Define and endpoint to find one single element of your model by its id
+yourRouter.get(&apos;/todos/:todo_id&apos;,yourController.getOne.bind(yourController));
+/**
+ * To use getOne and destroy you must use a middleware called
+ * getOneMiddleware wich will handle the existence validation(convenient for cool 404 status codes)
+ */
+yourRouter.put(&apos;/todos/:todo_id&apos;, [
+  yourController.getOneMiddleware.bind(yourController),
+  yourController.update.bind(yourController)
+]);
+//Define an endpoint to delete a single element of your model by its id
+yourRouter.del(&apos;/todos/:todo_id&apos;,[
+  yourController.getOneMiddleware.bind(yourController),
+  yourController.destroy.bind(yourController)
+]);
+
+yourRouter.applyRoutes(app);</code>
+</code></pre><h3>Start the server</h3><p>Just use your implementation start method on a given port and you are ready to go.</p><pre><code class="lang-javascript"><code class="source-code prettyprint">app.listen(8000,() =&gt; {
+  console.log(&apos;Ready to rock&apos;);
+});</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/restify-implementation.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Extending Controller</h1><p>You can extend the existing implementations to add more functionality aside to the typical CRUD Resource methods.</p><h2>Extension example</h2><p>In this example we are using a ES6 class to extend Express implementation
+basically adding a new method called listPending.</p><pre><code class="lang-javascript"><code class="source-code prettyprint">class TodoResource extends ExpressController {
+
+  constructor(sequelize,model) {
+    super(sequelize,model);
+  }
+
+  async listPending(req,res) {
+    try {
+      const response = await this.model.findAll({
+        where: {
+          is_done: false
+        }
+      });
+      //This way it will be compatible for express and restify
+      //however you can just use res.status(..).send(..)
+      this.sendResponse(res, 200,response);
+    } catch(error) {
+      //custom formating
+      const resourceErr = this.resource.sequelizeError(error);
+      this.sendResponse(res, resourceErr.code, resourceErr);
+    }
+  }
+}</code>
+</code></pre><p>Afterwards you can easily publish the routes the same way as in the examples and add the new method:</p><pre><code class="lang-js"><code class="source-code prettyprint">yourRouter.route(&apos;/pending&apos;).get(yourController.listPending.bind(yourController));
+</code>
+</code></pre><p>This is convenient to basically getting started with the basic REST endpoints and then start adding some more complex endpoints for your api.</p></div>
+        <a data-ice="link" href="manual/extending-controller.html"></a>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,2891 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "lib/.external-ecmascript.js",
+    "static": true,
+    "longname": "lib/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "lib/errors/ResourceError.js",
+    "content": "const formatStackTrace = require('./formatStackTrace');\nconst ErrorMap = require('./error_map');\n/**\n * Special class for handling exceptions in a more readable\n * and structured way, it is based on Google's API design\n * guidelines for error handling\n *\n * @extends Error\n * @class ResourceError\n * @author Marco Villarreal\n * @since 24/12/2018\n * @version 1.0.0\n */\nclass ResourceError extends Error {\n  /**\n   * @constructor\n   * @param {Object} param0\n   * @param {String} message\n   */\n  constructor({ status, code }, message) {\n    super(message);\n    this.name = 'ResourceError';\n    this.status = status;\n    this.code = code;\n    this.message = message;\n    this.details = formatStackTrace(this.stack);\n    Error.captureStackTrace(this, ResourceError);\n  }\n\n  static get ERRORS() {\n    return ErrorMap;\n  }\n\n  toJSON() {\n    const { status, code, message, details } = this;\n    return { status, code, message, details };\n  }\n}\n\nmodule.exports = ResourceError;\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/ResourceError.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "formatStackTrace",
+    "memberof": "lib/errors/ResourceError.js",
+    "static": true,
+    "longname": "lib/errors/ResourceError.js~formatStackTrace",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/ResourceError.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "ErrorMap",
+    "memberof": "lib/errors/ResourceError.js",
+    "static": true,
+    "longname": "lib/errors/ResourceError.js~ErrorMap",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/ResourceError.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "class",
+    "name": "ResourceError",
+    "memberof": "lib/errors/ResourceError.js",
+    "static": true,
+    "longname": "lib/errors/ResourceError.js~ResourceError",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/ResourceError.js",
+    "importStyle": null,
+    "description": "Special class for handling exceptions in a more readable\nand structured way, it is based on Google's API design\nguidelines for error handling",
+    "lineNumber": 14,
+    "since": "24/12/2018",
+    "version": "1.0.0",
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "ResourceError"
+      },
+      {
+        "tagName": "@author",
+        "tagValue": "Marco Villarreal"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "*"
+    ]
+  },
+  {
+    "__docId__": 52,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/errors/ResourceError.js~ResourceError#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param0",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "message",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "name",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "static": false,
+    "longname": "lib/errors/ResourceError.js~ResourceError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "status",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "static": false,
+    "longname": "lib/errors/ResourceError.js~ResourceError#status",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "code",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "static": false,
+    "longname": "lib/errors/ResourceError.js~ResourceError#code",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "message",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "static": false,
+    "longname": "lib/errors/ResourceError.js~ResourceError#message",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "details",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "static": false,
+    "longname": "lib/errors/ResourceError.js~ResourceError#details",
+    "access": "public",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "get",
+    "name": "ERRORS",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/errors/ResourceError.js~ResourceError.ERRORS",
+    "access": "public",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "toJSON",
+    "memberof": "lib/errors/ResourceError.js~ResourceError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/errors/ResourceError.js~ResourceError#toJSON",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "{\"status\": *, \"code\": *, \"message\": *, \"details\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "lib/errors/SequelizeError.js",
+    "content": "const SequelizeErrorHandlers = require('./SequelizeErrorHandlers');\nconst ERROR_MAP = require('./error_map');\nconst formatStackTrace = require('./formatStackTrace');\n/**\n * SequelizeError represents a custom error\n * class to handle sequelize's exception in\n * a custom way it will parse the error into\n * a known format and extract the stack trace\n * into an pretty format.\n */\nclass SequelizeError extends Error {\n  constructor(originalError) {\n    super(originalError.message);\n    this.errorHandlers = SequelizeErrorHandlers;\n    const { status, code, message, details } = this.handleError(originalError);\n    this.status = status;\n    this.code = code;\n    this.message = message;\n    this.details = details;\n\n    Error.captureStackTrace(this, this.constructor);\n  }\n\n  /**\n   * Overrides the default toJSON behavior\n   * to create a pretty printable json Object\n   * @return {Object}\n   */\n  toJSON() {\n    const { status, code, message, details } = this;\n    return { status, code, message, details };\n  }\n\n  handleError(originalError) {\n    let resultingError = {};\n    const { name } = originalError;\n    if (this.errorHandlers && this.errorHandlers[name]) {\n      const errorHandler = this.errorHandlers[name];\n      if (typeof errorHandler === 'function') {\n        resultingError = errorHandler.call(this, originalError);\n      } else if (typeof errorHandler === 'object') {\n        const { message, stack } = originalError;\n        const { status, code } = errorHandler;\n        const details = formatStackTrace(stack);\n        resultingError = { status, code, message, details };\n      }\n    } else if (name === 'ResourceError') {\n      resultingError = originalError;\n    } else {\n      const { message, stack } = originalError;\n      const { status, code } = ERROR_MAP.UNKNOWN;\n      const details = formatStackTrace(stack);\n      resultingError = { status, code, message, details };\n    }\n    return resultingError;\n  }\n}\n\nmodule.exports = SequelizeError;\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/SequelizeError.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "SequelizeErrorHandlers",
+    "memberof": "lib/errors/SequelizeError.js",
+    "static": true,
+    "longname": "lib/errors/SequelizeError.js~SequelizeErrorHandlers",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/SequelizeError.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "ERROR_MAP",
+    "memberof": "lib/errors/SequelizeError.js",
+    "static": true,
+    "longname": "lib/errors/SequelizeError.js~ERROR_MAP",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/SequelizeError.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "formatStackTrace",
+    "memberof": "lib/errors/SequelizeError.js",
+    "static": true,
+    "longname": "lib/errors/SequelizeError.js~formatStackTrace",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/SequelizeError.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "class",
+    "name": "SequelizeError",
+    "memberof": "lib/errors/SequelizeError.js",
+    "static": true,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/SequelizeError.js",
+    "importStyle": null,
+    "description": "SequelizeError represents a custom error\nclass to handle sequelize's exception in\na custom way it will parse the error into\na known format and extract the stack trace\ninto an pretty format.",
+    "lineNumber": 11,
+    "interface": false,
+    "extends": [
+      "Error"
+    ]
+  },
+  {
+    "__docId__": 65,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "member",
+    "name": "errorHandlers",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#errorHandlers",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "member",
+    "name": "status",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#status",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "code",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#code",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "member",
+    "name": "message",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#message",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "member",
+    "name": "details",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#details",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "toJSON",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#toJSON",
+    "access": "public",
+    "description": "Overrides the default toJSON behavior\nto create a pretty printable json Object",
+    "lineNumber": 29,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "handleError",
+    "memberof": "lib/errors/SequelizeError.js~SequelizeError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/errors/SequelizeError.js~SequelizeError#handleError",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "originalError",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "lib/errors/SequelizeErrorHandlers.js",
+    "content": "const ERROR_MAP = require('./error_map');\n/**\n * Defines Sequelize error handling map,\n * on every sequelize's error it will map\n * the corresponding exception to a status code\n * present on error_map.js, except for\n * SequelizeValidationError, on this particular\n * case whe will not use formatStackTrace\n * to extract the detail field, it will\n * extract the errors from the original\n * exception and map them into a new detail\n *\n */\nmodule.exports = {\n  SequelizeValidationError: errorObj => {\n    const { status, code } = ERROR_MAP.FAILED_PRECONDITION;\n    const details = errorObj.errors.map(err => {\n      const { type, message } = err;\n      return { type, message };\n    });\n    return { status, code, message: 'Validation Failed', details };\n  },\n  SequelizeDatabaseError: ERROR_MAP.INTERNAL,\n  SequelizeTimeoutError: ERROR_MAP.UNAVAILABLE,\n  SequelizeForeignKeyConstraintError: ERROR_MAP.FAILED_PRECONDITION,\n  SequelizeUniqueConstraintError: ERROR_MAP.ALREADY_EXISTS,\n  SequelizeConnectionError: ERROR_MAP.UNAVAILABLE,\n  SequelizeConnectionRefusedError: ERROR_MAP.UNAVAILABLE,\n  SequelizeAccessDeniedError: ERROR_MAP.PERMISSION_DENIED,\n  SequelizeHostNotFoundError: ERROR_MAP.INTERNAL,\n  SequelizeHostNotReachableError: ERROR_MAP.INTERNAL,\n  SequelizeInvalidConnectionError: ERROR_MAP.INTERNAL,\n  SequelizeConnectionTimedOutError: ERROR_MAP.INTERNAL,\n  SequelizeInstanceError: ERROR_MAP.INTERNAL,\n  SequelizeEmptyResultError: ERROR_MAP.INTERNAL,\n  SequelizeQueryError: ERROR_MAP.INTERNAL\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/SequelizeErrorHandlers.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "ERROR_MAP",
+    "memberof": "lib/errors/SequelizeErrorHandlers.js",
+    "static": true,
+    "longname": "lib/errors/SequelizeErrorHandlers.js~ERROR_MAP",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/SequelizeErrorHandlers.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "lib/errors/error_map.js",
+    "content": "/**\n * Error status codes map\n * INTERNAL_CODE:HTTP_CODE\n * based on google design guideliness for error status codes\n *\n * https://github.com/googleapis/googleapis/blob/master/google/rpc/code.proto\n *\n */\nmodule.exports = {\n  OK: { code: 200, status: 'OK' },\n  INVALID_ARGUMENT: { code: 400, status: 'INVALID_ARGUMENT' },\n  FAILED_PRECONDITION: { code: 412, status: 'FAILED_PRECONDITION' },\n  OUT_OF_RANGE: { code: 400, status: 'OUT_OF_RANGE' },\n  UNAUTHENTICATED: { code: 401, status: 'UNAUTHENTICATED' },\n  PERMISSION_DENIED: { code: 403, status: 'PERMISSION_DENIED' },\n  NOT_FOUND: { code: 404, status: 'NOT_FOUND' },\n  ABORTED: { code: 409, status: 'ABORTED' },\n  ALREADY_EXISTS: { code: 409, status: 'ALREADY_EXISTS' },\n  RESOURCE_EXHAUSTED: { code: 429, status: 'RESOURCE_EXHAUSTED' },\n  CANCELLED: { code: 499, status: 'CANCELLED' },\n  DATA_LOSS: { code: 500, status: 'DATA_LOSS' },\n  UNKNOWN: { code: 500, status: 'UNKNOWN' },\n  INTERNAL: { code: 500, status: 'INTERNAL' },\n  NOT_IMPLEMENTED: { code: 501, status: 'NOT_IMPLEMENTED' },\n  UNAVAILABLE: { code: 503, status: 'UNAVAILABLE' },\n  DEADLINE_EXCEEDED: { code: 504, status: 'DEADLINE_EXCEEDED' }\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/error_map.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "lib/errors/formatStackTrace.js",
+    "content": "const parseStackTrace = errorLine => {\n  const resultingObj = {};\n  const traceFields = {\n    blamingFile: /\\(\\S+\\)/,\n    blamingLines: /:\\d+:\\d+/,\n    blamingSource: /at \\S+/\n  };\n  Object.keys(traceFields).forEach(traceField => {\n    const traceRegexp = traceFields[traceField];\n    const matchResult = errorLine.match(traceRegexp);\n    if (matchResult && matchResult.length > 0) {\n      const [firstMatch] = matchResult;\n      resultingObj[traceField] = firstMatch;\n    }\n  });\n  return resultingObj;\n};\n\nconst transformStackTrace = errorLine => {\n  let line = null;\n  let column = null;\n  let { blamingFile, blamingLines, blamingSource } = errorLine;\n  if (blamingFile != null && typeof blamingFile === 'string') {\n    blamingFile = blamingFile\n      .replace('(', '')\n      .replace(')', '')\n      .replace(blamingLines, '');\n  }\n  if (blamingSource != null && typeof blamingFile === 'string') {\n    blamingSource = blamingSource.replace('at', '').trim();\n  }\n  if (blamingLines != null) {\n    blamingLines = blamingLines.split(':');\n    [, line, column] = blamingLines;\n  }\n  return { blamingFile, line, column, blamingSource };\n};\n\n/**\n * Transforms a stackTrace into an array of objects\n * containing pretty formatted information about an\n * original stack trace, for example:\n * \n * Error: ERROR_INTERNO\n    at Object.<anonymous> (/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/resourceErr.js:3:13)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)\n    at startup (internal/bootstrap/node.js:266:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:596:3)\n\n    Will be mapped into:\n\n * [{\n    blamingFile: '/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/resourceErr.js',\n    line: '3',\n    column: '13',\n    blamingSource: 'Object.<anonymous>'\n  },\n  {\n    blamingFile: 'internal/modules/cjs/loader.js',\n    line: '689',\n    column: '30',\n    blamingSource: 'Module._compile'\n  },\n  {\n    blamingFile: 'internal/modules/cjs/loader.js',\n    line: '700',\n    column: '10',\n    blamingSource: 'Object.Module._extensions..js'\n  },\n  {\n    blamingFile: 'internal/modules/cjs/loader.js',\n    line: '599',\n    column: '32',\n    blamingSource: 'Module.load'\n  },\n  {\n    blamingFile: 'internal/modules/cjs/loader.js',\n    line: '538',\n    column: '12',\n    blamingSource: 'tryModuleLoad'\n  },\n  {\n    blamingFile: 'internal/modules/cjs/loader.js',\n    line: '530',\n    column: '3',\n    blamingSource: 'Function.Module._load'\n  },\n  {\n    blamingFile: 'internal/modules/cjs/loader.js',\n    line: '742',\n    column: '12',\n    blamingSource: 'Function.Module.runMain'\n  },\n  {\n    blamingFile: 'internal/bootstrap/node.js',\n    line: '266',\n    column: '19',\n    blamingSource: 'startup'\n  },\n  {\n    blamingFile: 'internal/bootstrap/node.js',\n    line: '596',\n    column: '3',\n    blamingSource: 'bootstrapNodeJSCore'\n  }\n]\n * @param {String} stackTrace The stacktrace string to be mapped\n * @return {Array} an array of the containing information of the\n * stack trace\n */\nmodule.exports = stackTrace => {\n  const formattedStack = stackTrace\n    .split('\\n')\n    .map(line => parseStackTrace(line))\n    .filter(line => Object.keys(line).length > 0)\n    .map(line => transformStackTrace(line))\n    .filter(stackDetail => stackDetail.line != null && stackDetail.column != null);\n  return formattedStack;\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/errors/formatStackTrace.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "parseStackTrace",
+    "memberof": "lib/errors/formatStackTrace.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/errors/formatStackTrace.js~parseStackTrace",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/formatStackTrace.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "errorLine",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "function",
+    "name": "transformStackTrace",
+    "memberof": "lib/errors/formatStackTrace.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/errors/formatStackTrace.js~transformStackTrace",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/errors/formatStackTrace.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "errorLine",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"blamingFile\": *, \"line\": *, \"column\": *, \"blamingSource\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "file",
+    "name": "lib/implementations/BaseRestController.js",
+    "content": "const debug = require('debug')('sequelize-resource:base-rest-controller');\nconst querystring = require('querystring');\nconst ResourceController = require('../resource-controller/ResourceController');\nconst ResourceError = require('../errors/ResourceError');\n\n/**\n *\n * @class BaseRestController\n * @author Marco Villarreal\n */\nclass BaseRestController {\n  /**\n   *\n   * @constructor\n   * @param {Sequelize} sequelize\n   * @param {Sequelize.Model} model\n   */\n  constructor(sequelize, model) {\n    this.resource = new ResourceController(sequelize, model);\n    this.model = model;\n    this.baseURL = null;\n  }\n\n  checkJsonHeader(req) {\n    debug(`Unimplemented checkJsonHeader method on request ${req}`);\n    throw new ResourceError(ResourceError.ERRORS.INTERNAL, 'Unimplemented checkJsonHeader method');\n  }\n\n  async create(req, res) {\n    if (this.checkJsonHeader(req)) {\n      const { error, response } = await this.resource.create(req.body);\n      if (error) {\n        this.sendResponse(res, error.code, error);\n      } else {\n        this.sendResponse(res, 201, this.attachResourceLink(response.get({ plain: true }), req));\n      }\n    } else {\n      const error = new ResourceError(\n        ResourceError.ERRORS.FAILED_PRECONDITION,\n        'Request body must be application/json'\n      );\n      this.sendResponse(res, error.code, error);\n    }\n  }\n\n  /**\n   *  Note: implemented a little polifyll to satisfy query params on express(a collission issue caused by restify)\n   * @param {Request} req\n   * @param {Response} res\n   */\n  async list(req, res) {\n    let queryParams = req.query;\n    if (typeof req.query === 'function') {\n      queryParams = querystring.parse(req.query());\n    }\n    const { sortField, sortOrder } = queryParams;\n    const requestArgs = { sortField, sortOrder };\n    let { limit, offset } = queryParams;\n    if (limit != null) {\n      limit = parseInt(limit, 10);\n      requestArgs.limit = limit;\n    }\n\n    if (offset != null) {\n      offset = parseInt(offset, 0);\n      requestArgs.offset = offset;\n    }\n\n    const { error, response } = await this.resource.findAll(requestArgs);\n\n    if (error) {\n      this.sendResponse(res, error.code, error);\n    } else {\n      this.sendResponse(res, 200, this.attachResourcesLinks(response, req));\n    }\n  }\n\n  async getOne(req, res) {\n    const { error, response } = await this.resource.findOne(req.params);\n    if (error) {\n      this.sendResponse(res, error.code, error);\n    } else {\n      const resource = this.attachResourceLink(response.get({ plain: true }), req);\n      this.setHeaders(res, { Location: resource.links.self.href });\n      this.sendResponse(res, 200, resource);\n    }\n  }\n\n  async getOneMiddleware(req, res, next) {\n    const { response, error } = await this.resource.findOne(req.params);\n    if (error) {\n      this.sendResponse(res, error.code, error);\n    } else {\n      req.resource = response;\n      next();\n    }\n  }\n\n  async destroy(req, res) {\n    if (!req.resource) {\n      this.setStatus(res, 412);\n      this.response(res, null);\n    }\n    const { response, error } = await this.resource.destroy(req.resource);\n    if (error) {\n      this.sendResponse(res, error.code, error);\n    } else {\n      this.sendResponse(res, 200, response);\n    }\n  }\n\n  async update(req, res) {\n    if (this.checkJsonHeader(req)) {\n      if (!req.resource) {\n        this.setStatus(res, 412);\n        this.response(res, null);\n      } else {\n        const { response, error } = await this.resource.update(req.resource, req.body);\n        if (error) {\n          this.sendResponse(res, error.code, error);\n        } else {\n          this.sendResponse(res, 200, this.attachResourceLink(response));\n        }\n      }\n    } else {\n      const error = new ResourceError(\n        ResourceError.ERRORS.FAILED_PRECONDITION,\n        'Request body must be application/json'\n      );\n      this.sendResponse(res, error.code, error);\n    }\n  }\n\n  /**\n   *\n   * @method attachResourceLink\n   * @param {Object} resource\n   * @param {Request} requestObj\n   * @return {Object}\n   */\n  attachResourceLink(resource, requestObj) {\n    const linkedResource = resource;\n    try {\n      const baseURL = this.createHATEOABaseURL(requestObj);\n      const primaryKeys = this.resource.primaryKey.map(attribute => linkedResource[attribute]);\n      const href = `${baseURL}/${primaryKeys.join('/')}`;\n      linkedResource.links = {\n        self: { href }\n      };\n    } catch (error) {\n      debug('Error found attaching resource link %o', error);\n    }\n\n    return linkedResource;\n  }\n\n  /**\n   * @method attachResourcesLinks\n   * @param {Object} paginatedResources\n   * @param {Request} requestObj\n   * @return {Object}\n   */\n  attachResourcesLinks(paginatedResources, requestObj) {\n    const pagingInfo = paginatedResources.paging;\n    const baseURL = this.createHATEOABaseURL(requestObj);\n    const { first, next, previous } = pagingInfo;\n\n    const firstLink =\n      first != null ? `${baseURL}?limit=${first.limit}&offset=${pagingInfo.first.offset}` : null;\n    const nextLink =\n      next != null ? `${baseURL}?limit=${next.limit}&offset=${pagingInfo.next.offset}` : null;\n    const previousLink =\n      previous != null ? `${baseURL}?limit=${previous.limit}&offset=${previous.offset}` : null;\n\n    const linkedResources = paginatedResources.rows.map(dataRow =>\n      this.attachResourceLink(dataRow, requestObj)\n    );\n\n    return {\n      rows: linkedResources,\n      links: {\n        first: firstLink,\n        next: nextLink,\n        previous: previousLink\n      }\n    };\n  }\n}\n\nmodule.exports = BaseRestController;\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/implementations/BaseRestController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 80,
+    "kind": "variable",
+    "name": "debug",
+    "memberof": "lib/implementations/BaseRestController.js",
+    "static": true,
+    "longname": "lib/implementations/BaseRestController.js~debug",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/BaseRestController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "querystring",
+    "memberof": "lib/implementations/BaseRestController.js",
+    "static": true,
+    "longname": "lib/implementations/BaseRestController.js~querystring",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/BaseRestController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "ResourceController",
+    "memberof": "lib/implementations/BaseRestController.js",
+    "static": true,
+    "longname": "lib/implementations/BaseRestController.js~ResourceController",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/BaseRestController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "variable",
+    "name": "ResourceError",
+    "memberof": "lib/implementations/BaseRestController.js",
+    "static": true,
+    "longname": "lib/implementations/BaseRestController.js~ResourceError",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/BaseRestController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "class",
+    "name": "BaseRestController",
+    "memberof": "lib/implementations/BaseRestController.js",
+    "static": true,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/BaseRestController.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "BaseRestController"
+      },
+      {
+        "tagName": "@author",
+        "tagValue": "Marco Villarreal"
+      }
+    ],
+    "interface": false
+  },
+  {
+    "__docId__": 85,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Sequelize"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sequelize",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Sequelize.Model"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "model",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 86,
+    "kind": "member",
+    "name": "resource",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#resource",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "name": "model",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#model",
+    "access": "public",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "member",
+    "name": "baseURL",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#baseURL",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "method",
+    "name": "checkJsonHeader",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#checkJsonHeader",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "method",
+    "name": "create",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#create",
+    "access": "public",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "method",
+    "name": "list",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#list",
+    "access": "public",
+    "description": " Note: implemented a little polifyll to satisfy query params on express(a collission issue caused by restify)",
+    "lineNumber": 51,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Request"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "req",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Response"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "res",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "getOne",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#getOne",
+    "access": "public",
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "method",
+    "name": "getOneMiddleware",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#getOneMiddleware",
+    "access": "public",
+    "description": null,
+    "lineNumber": 89,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#destroy",
+    "access": "public",
+    "description": null,
+    "lineNumber": 99,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "update",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#update",
+    "access": "public",
+    "description": null,
+    "lineNumber": 112,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "attachResourceLink",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#attachResourceLink",
+    "access": "public",
+    "description": "",
+    "lineNumber": 141,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "attachResourceLink"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "resource",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Request"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "requestObj",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "attachResourcesLinks",
+    "memberof": "lib/implementations/BaseRestController.js~BaseRestController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/BaseRestController.js~BaseRestController#attachResourcesLinks",
+    "access": "public",
+    "description": "",
+    "lineNumber": 163,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "attachResourcesLinks"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "paginatedResources",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Request"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "requestObj",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "file",
+    "name": "lib/implementations/ExpressResourceController.js",
+    "content": "const debug = require('debug')('sequelize-resource:express-resource-controller');\nconst BaseRestController = require('./BaseRestController');\n\n/**\n *\n */\nclass ExpressResourceController extends BaseRestController {\n  constructor(sequelize, model) {\n    super(sequelize, model);\n    this.implementation = 'express';\n  }\n\n  setHeaders(responseHandler, headers) {\n    responseHandler.set(headers);\n  }\n\n  sendResponse(responseHandler, httpStatus, responseBody) {\n    return responseHandler.status(httpStatus).send(responseBody);\n  }\n\n  checkJsonHeader(requestInfo) {\n    return requestInfo.is('application/json');\n  }\n\n  createHATEOABaseURL(req) {\n    if (this.baseURL == null) {\n      debug('Hateoas baseURL not found creating one');\n      this.baseURL = `${req.protocol}://${req.get('host')}${req.originalUrl}`;\n      debug('Hateoas Url created with path %o', this.baseURL);\n      this.resource.setBaseURL(this.baseURL);\n    }\n    return this.baseURL;\n  }\n}\n\nmodule.exports = ExpressResourceController;\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/implementations/ExpressResourceController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 99,
+    "kind": "variable",
+    "name": "debug",
+    "memberof": "lib/implementations/ExpressResourceController.js",
+    "static": true,
+    "longname": "lib/implementations/ExpressResourceController.js~debug",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/ExpressResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "variable",
+    "name": "BaseRestController",
+    "memberof": "lib/implementations/ExpressResourceController.js",
+    "static": true,
+    "longname": "lib/implementations/ExpressResourceController.js~BaseRestController",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/ExpressResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "class",
+    "name": "ExpressResourceController",
+    "memberof": "lib/implementations/ExpressResourceController.js",
+    "static": true,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/ExpressResourceController.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 7,
+    "interface": false,
+    "extends": [
+      "BaseRestController"
+    ]
+  },
+  {
+    "__docId__": 102,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "member",
+    "name": "implementation",
+    "memberof": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "static": false,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController#implementation",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "setHeaders",
+    "memberof": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController#setHeaders",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "responseHandler",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "headers",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "method",
+    "name": "sendResponse",
+    "memberof": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController#sendResponse",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "responseHandler",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "httpStatus",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "responseBody",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "method",
+    "name": "checkJsonHeader",
+    "memberof": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController#checkJsonHeader",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "requestInfo",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "method",
+    "name": "createHATEOABaseURL",
+    "memberof": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController#createHATEOABaseURL",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "member",
+    "name": "baseURL",
+    "memberof": "lib/implementations/ExpressResourceController.js~ExpressResourceController",
+    "static": false,
+    "longname": "lib/implementations/ExpressResourceController.js~ExpressResourceController#baseURL",
+    "access": "public",
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "lib/implementations/RestifyResourceController.js",
+    "content": "const debug = require('debug')('sequelize-resource:restify-resource-controller');\nconst BaseRestController = require('./BaseRestController');\n\nclass RestifyResourceController extends BaseRestController {\n  constructor(sequelize, model) {\n    super(sequelize, model);\n    this.implementation = 'restify';\n  }\n\n  setHeaders(responseHandler, headers) {\n    responseHandler.set(headers);\n  }\n\n  sendResponse(responseHandler, httpStatus, responseBody) {\n    return responseHandler.send(httpStatus, responseBody);\n  }\n\n  checkJsonHeader(requestInfo) {\n    return requestInfo.is('application/json');\n  }\n\n  createHATEOABaseURL(req) {\n    if (this.baseURL == null) {\n      const protocol = req.isSecure() ? 'https' : 'http';\n      const path = this.cleanPath(req.getRoute().path);\n      debug('Hateoas baseURL not found creating one');\n      this.baseURL = `${protocol}://${req.headers.host}${path}`;\n      debug('Hateoas Url created with path %o', this.baseURL);\n      this.resource.setBaseURL(this.baseURL);\n    }\n    return this.baseURL;\n  }\n\n  cleanPath(basePath) {\n    return basePath.replace(/\\/:\\S+/g, '');\n  }\n}\n\nmodule.exports = RestifyResourceController;\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/implementations/RestifyResourceController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "variable",
+    "name": "debug",
+    "memberof": "lib/implementations/RestifyResourceController.js",
+    "static": true,
+    "longname": "lib/implementations/RestifyResourceController.js~debug",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/RestifyResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "BaseRestController",
+    "memberof": "lib/implementations/RestifyResourceController.js",
+    "static": true,
+    "longname": "lib/implementations/RestifyResourceController.js~BaseRestController",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/RestifyResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "class",
+    "name": "RestifyResourceController",
+    "memberof": "lib/implementations/RestifyResourceController.js",
+    "static": true,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/implementations/RestifyResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "BaseRestController"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "member",
+    "name": "implementation",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#implementation",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "method",
+    "name": "setHeaders",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#setHeaders",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "responseHandler",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "headers",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "method",
+    "name": "sendResponse",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#sendResponse",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "responseHandler",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "httpStatus",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "responseBody",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "method",
+    "name": "checkJsonHeader",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#checkJsonHeader",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "requestInfo",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "method",
+    "name": "createHATEOABaseURL",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#createHATEOABaseURL",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "member",
+    "name": "baseURL",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#baseURL",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "method",
+    "name": "cleanPath",
+    "memberof": "lib/implementations/RestifyResourceController.js~RestifyResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/implementations/RestifyResourceController.js~RestifyResourceController#cleanPath",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "basePath",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "file",
+    "name": "lib/resource-controller/ResourceController.js",
+    "content": "const debug = require('debug')('sequelize-resource:resource-controller');\nconst ResourceError = require('../errors/ResourceError');\nconst SequelizeError = require('../errors/SequelizeError');\nconst errorCodes = require('../errors/error_map');\n/**\n * @class ResourceController\n * @author Marco Villarreal\n */\nclass ResourceController {\n  /**\n   * @property SORT_ORDERS\n   * @static\n   * @type {Array}\n   */\n  static get SORT_ORDERS() {\n    return ['ASC', 'DESC'];\n  }\n\n  /**\n   * @constructor\n   * @param {Sequelize} sequelize\n   * @param {Sequelize.Model} model\n   */\n  constructor(sequelize, model) {\n    this.sequelize = sequelize;\n    this.model = model;\n    this.modelAttributes = Object.keys(this.model.attributes);\n    this.getPrimaryKey();\n    this.ERROR_CODES = errorCodes;\n  }\n\n  /**\n   * @method sortOrderSupported\n   * @param {String} sortOrder\n   * @return {Boolean}\n   */\n  sortOrderSupported(sortOrder) {\n    return ResourceController.SORT_ORDERS.indexOf(sortOrder.toUpperCase()) >= 0;\n  }\n\n  /**\n   * @method attributeExists\n   * @param {String} attribute\n   * @return {Boolean}\n   */\n  attributeExists(attribute) {\n    return this.modelAttributes.indexOf(attribute) >= 0;\n  }\n\n  /**\n   * @method setBaseURL\n   * @param {String} baseURL\n   */\n  setBaseURL(baseURL) {\n    if (this.baseURL == null) {\n      this.baseURL = baseURL;\n    }\n  }\n\n  /**\n   *\n   * @method _getPrimaryKey\n   * @return {Array}\n   */\n  getPrimaryKey() {\n    if (!this.primaryKey) {\n      this.primaryKey = Object.keys(this.model.primaryKeys);\n    }\n    return this.primaryKey;\n  }\n\n  /**\n   * @method sequelizeError\n   * @param {Error} originalError\n   * @return {SequelizeError}\n   */\n  sequelizeError(originalError) {\n    return new SequelizeError(originalError);\n  }\n\n  /**\n   * @method resourceError\n   * @param {String} errorCode\n   * @param {String} message\n   * @returns {ResourceError}\n   */\n  resourceError(errorType, message) {\n    return new ResourceError(errorType, message);\n  }\n}\n\nResourceController.prototype.findOne = require('./methods/findOne')(debug);\nResourceController.prototype.findAll = require('./methods/findAll')(debug);\nResourceController.prototype.destroy = require('./methods/destroy')(debug);\nResourceController.prototype.update = require('./methods/update')(debug);\nResourceController.prototype.create = require('./methods/create')(debug);\n\nmodule.exports = ResourceController;\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/resource-controller/ResourceController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "debug",
+    "memberof": "lib/resource-controller/ResourceController.js",
+    "static": true,
+    "longname": "lib/resource-controller/ResourceController.js~debug",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/resource-controller/ResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "ResourceError",
+    "memberof": "lib/resource-controller/ResourceController.js",
+    "static": true,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceError",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/resource-controller/ResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "variable",
+    "name": "SequelizeError",
+    "memberof": "lib/resource-controller/ResourceController.js",
+    "static": true,
+    "longname": "lib/resource-controller/ResourceController.js~SequelizeError",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/resource-controller/ResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "variable",
+    "name": "errorCodes",
+    "memberof": "lib/resource-controller/ResourceController.js",
+    "static": true,
+    "longname": "lib/resource-controller/ResourceController.js~errorCodes",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/resource-controller/ResourceController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "class",
+    "name": "ResourceController",
+    "memberof": "lib/resource-controller/ResourceController.js",
+    "static": true,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController",
+    "access": "public",
+    "export": false,
+    "importPath": "sequelize-resource-controller/lib/resource-controller/ResourceController.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "ResourceController"
+      },
+      {
+        "tagName": "@author",
+        "tagValue": "Marco Villarreal"
+      }
+    ],
+    "interface": false
+  },
+  {
+    "__docId__": 127,
+    "kind": "get",
+    "name": "SORT_ORDERS",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController.SORT_ORDERS",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "SORT_ORDERS",
+        "description": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 24,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Sequelize"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sequelize",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Sequelize.Model"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "model",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 129,
+    "kind": "member",
+    "name": "sequelize",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#sequelize",
+    "access": "public",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "member",
+    "name": "model",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#model",
+    "access": "public",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "member",
+    "name": "modelAttributes",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#modelAttributes",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "member",
+    "name": "ERROR_CODES",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#ERROR_CODES",
+    "access": "public",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "method",
+    "name": "sortOrderSupported",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#sortOrderSupported",
+    "access": "public",
+    "description": "",
+    "lineNumber": 37,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "sortOrderSupported"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sortOrder",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "method",
+    "name": "attributeExists",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#attributeExists",
+    "access": "public",
+    "description": "",
+    "lineNumber": 46,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "attributeExists"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "attribute",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "method",
+    "name": "setBaseURL",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#setBaseURL",
+    "access": "public",
+    "description": "",
+    "lineNumber": 54,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "setBaseURL"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "baseURL",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 136,
+    "kind": "member",
+    "name": "baseURL",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#baseURL",
+    "access": "public",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "method",
+    "name": "getPrimaryKey",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#getPrimaryKey",
+    "access": "public",
+    "description": "",
+    "lineNumber": 65,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "_getPrimaryKey"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 138,
+    "kind": "member",
+    "name": "primaryKey",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#primaryKey",
+    "access": "public",
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "method",
+    "name": "sequelizeError",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#sequelizeError",
+    "access": "public",
+    "description": "",
+    "lineNumber": 77,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "sequelizeError"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Error"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "originalError",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "SequelizeError"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 140,
+    "kind": "method",
+    "name": "resourceError",
+    "memberof": "lib/resource-controller/ResourceController.js~ResourceController",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "lib/resource-controller/ResourceController.js~ResourceController#resourceError",
+    "access": "public",
+    "description": "",
+    "lineNumber": 87,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "resourceError"
+      },
+      {
+        "tagName": "@returns",
+        "tagValue": "{ResourceError}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "errorCode",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "message",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ResourceError"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "file",
+    "name": "lib/resource-controller/methods/create.js",
+    "content": "module.exports = debug => {\n  return async function create(modelData) {\n    let transaction = null;\n    let response = null;\n    try {\n      const modelInstance = this.model.build(modelData);\n      debug('Creating a new Transaction to invoke save on model');\n      transaction = await this.sequelize.transaction();\n      const createdResource = await modelInstance.save({ transaction });\n      debug('Model Successfully saved, committing transaction');\n      await transaction.commit();\n      debug('Transaction commited');\n      response = { error: null, response: createdResource };\n    } catch (error) {\n      response = { error: this.sequelizeError(error), response: null };\n      if (transaction != null) {\n        debug('Rolling back the transaction');\n        await transaction.rollback();\n        debug('Transaction rolled back successfully');\n      }\n    }\n    return response;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/resource-controller/methods/create.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 142,
+    "kind": "file",
+    "name": "lib/resource-controller/methods/destroy.js",
+    "content": "module.exports = debug => {\n  return async function destroy(modelInstance) {\n    let transaction;\n    let response = null;\n    try {\n      debug('Creating a new Transaction to invoke save on model');\n      transaction = await this.sequelize.transaction();\n      const deletedResource = await modelInstance.destroy({ transaction });\n      debug('Model Successfully updated, committing transaction');\n      await transaction.commit();\n      debug('Transaction commited');\n      response = { error: null, response: deletedResource };\n    } catch (error) {\n      debug('Failed to destroy the model');\n      response = { error: this.sequelizeError(error), response: null };\n      if (transaction != null) {\n        debug('Rolling back the transaction');\n        await transaction.rollback();\n        debug('Transaction rolled back successfully');\n      }\n    }\n    return response;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/resource-controller/methods/destroy.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 143,
+    "kind": "file",
+    "name": "lib/resource-controller/methods/findAll.js",
+    "content": "module.exports = debug => {\n  return async function findAll({\n    limit = 10,\n    offset = 0,\n    sortOrder = null,\n    sortField = null\n  } = {}) {\n    let response = null;\n    let requestArguments = {};\n    try {\n      const isNumber = /\\d+/;\n      debug(`Validating limit and offsets parameters limit:${limit} offset:${offset}`);\n      if (!isNumber.test(limit) || !isNumber.test(offset)) {\n        throw this.resourceError(\n          this.ERROR_CODES.INVALID_ARGUMENT,\n          `Limit ${limit} or offset ${offset} are not numbers`\n        );\n      } else if (limit <= 0 || limit > 100) {\n        throw this.resourceError(\n          this.ERROR_CODES.INVALID_ARGUMENT,\n          `Limit ${limit} is lower than zero(0) or is greater than 100(limit per page)`\n        );\n      } else if (offset < 0) {\n        throw this.resourceError(\n          this.ERROR_CODES.INVALID_ARGUMENT,\n          'Negative offset is unsupported'\n        );\n      }\n      requestArguments = { limit, offset };\n\n      debug('Validating sortOrder and sortfield parameters');\n\n      if (sortOrder != null && sortField != null) {\n        if (!this.attributeExists(sortField)) {\n          throw this.resourceError(\n            this.ERROR_CODES.INVALID_ARGUMENT,\n            `Unsupported resource attribute ${sortField}`\n          );\n        } else if (!this.sortOrderSupported(sortOrder)) {\n          throw this.resourceError(\n            this.ERROR_CODES.INVALID_ARGUMENT,\n            `Unsupported sort order ${sortOrder}`\n          );\n        }\n        requestArguments.order = [[sortField, sortOrder]];\n      }\n\n      debug('Executing findAll with parameters %o ', requestArguments);\n      const results = await this.model.findAll(requestArguments);\n      debug('Successfully found resources, formatting pagingInfo');\n\n      const first = { limit, offset: 0 };\n      const next = results.length < limit ? null : { limit, offset: offset + limit };\n      const previous = offset > 0 ? { limit, offset: offset - limit } : null;\n\n      const formattedResponse = {\n        rows: results.map(instance => instance.get({ plain: true })),\n        paging: { first, next, previous }\n      };\n      debug('Successfully resolved paging info, resolving promise');\n      response = { error: null, response: formattedResponse };\n    } catch (error) {\n      response = { error: this.sequelizeError(error), response: null };\n    }\n    return response;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/resource-controller/methods/findAll.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 144,
+    "kind": "file",
+    "name": "lib/resource-controller/methods/findOne.js",
+    "content": "module.exports = debug => {\n  return async function findOne(modelIds) {\n    let response = null;\n    try {\n      debug('Validating not existing attributes in requested object %o', modelIds);\n      const nonExistingAttributes = Object.keys(modelIds).filter(\n        attribute => !this.attributeExists(attribute)\n      );\n      if (nonExistingAttributes.length > 0) {\n        const nonExistingAttr = nonExistingAttributes.join(',');\n        const errorMessage = `The following find attributes are unsupported by the resource ${nonExistingAttr}`;\n        throw this.resourceError(this.ERROR_CODES.INVALID_ARGUMENT, errorMessage);\n      }\n      const result = await this.model.findOne({ where: modelIds });\n      if (result == null) {\n        throw this.resourceError(this.ERROR_CODES.NOT_FOUND, 'Model not Found for requested Ids');\n      }\n      response = { error: null, response: result };\n    } catch (error) {\n      response = { error: this.sequelizeError(error), response: null };\n    }\n    return response;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/resource-controller/methods/findOne.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "lib/resource-controller/methods/update.js",
+    "content": "module.exports = debug => {\n  return async function update(modelInstance, modelData) {\n    let transaction;\n    let response = null;\n    try {\n      debug('Creating a new Transaction to invoke save on model');\n      transaction = await this.sequelize.transaction();\n      debug('Performing update');\n      const updatedResource = await modelInstance.update(modelData, { transaction });\n      debug('Model Successfully updated, committing transaction');\n      await transaction.commit();\n      debug('Transaction commited');\n      response = { error: null, response: updatedResource };\n    } catch (error) {\n      response = { error: this.sequelizeError(error), response: null };\n      if (transaction != null) {\n        debug('Rolling back the transaction');\n        await transaction.rollback();\n        debug('Transaction rolled back successfully');\n      }\n    }\n    return response;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/lib/resource-controller/methods/update.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "kind": "index",
+    "content": "# sequelize-resource-controller\n\n[![npm version](https://img.shields.io/npm/v/sequelize-resource-controller.svg)](https://www.npmjs.com/package/sequelize-resource-controller)\n[![Build Status](https://travis-ci.org/mvillarrealb/sequelize-resource-controller.svg?branch=master)](https://travis-ci.org/mvillarrealb/sequelize-resource-controller)\n[![codecov](https://codecov.io/gh/mvillarrealb/sequelize-resource-controlle/branch/master/graph/badge.svg)](https://codecov.io/gh/mvillarrealb/sequelize-resource-controller)\n![node](https://img.shields.io/node/v/sequelize-resource-controller.svg)\n[![License](https://img.shields.io/npm/l/sequelize-resource-controller.svg?maxAge=2592000?style=plastic)](https://github.com/mvillarrealb/sequelize-resource-controller/blob/master/LICENSE)\n\nsequelize-resource-controller is a REST Resource abstraction layer, wich handles all the burden of creating transactions, handling rollbacks and formatting responses for your Resource based Api with sequelize. \n\nProvides support for Restify and Express, two of the most popular http frameworks for nodejs.\n\n# Installation\n\n```bash\nnpm install --save sequelize-resource-controller\n```\n\n# Testing\n\n## Run all tests\n\n```bash\nnpm test\n```\n\n## Run unit tests only\n\n```bash\nnpm run unit-test\n```\n\n## Run integ tests only\n\n```bash\nnpm run integ-test\n```\n\n---\n\n# Generate ESDOC Documentation\n\n```bash\nnpm run docs\n```\n---\n\n# Examples\n\n# Basic Example (Todo List Api)\n\nThe basic example is just a straighforward todo Api with very few files(one file for the database & models, and one for each implementation).\n\nEndpoint|verb|Description\n--|---|---\n/todos|POST| Creates a new TODO\n/todos|GET| Gets all TODOS\n/todos/:todo_id|GET| Get a single TODO by id\n/todos/:todo_id|PUT| Updates a Todo\n/todos/:todo_id|DELETE| Deletes a single todo\n\nTo test this api use [todo-api.postman_collection](examples/basic/todo-api.postman_collection.json)\n\n[You can check the example Here](examples/basic/README.md)\n\n# Advanced Example(Points of interest)\n\nThe advanced example uses *node-lite-router* to publish the endpoints of the api, and basically represents a points of interest api(POI).\n\nEndpoint|verb|Description\n--|---|---\n/v1/points-of-interest|POST|Creates a point of interest\n/v1/points-of-interest|GET|Gets all the points of interest in a paginated fashion\n/v1/points-of-interest/:poi_id|PUT| Updates a point of interest\n/v1/points-of-interest/:poi_id|DELETE| Deletes a point of interest\n/v1/points-of-interest/:poi_id|GET| Finds a particular a point of interest\n\nTo test this api use [poi-api.postman_collection](examples/advanced/poi-api.postman_collection.json)\n\n[You can check the example Here](examples/advanced/README.md)\n# Why sequelize-resource-controller(My motivations)?\n\nWhen writing CRUD based REST Apis with a relational database backend, you'll often find yourself loosing time with some stuff like implementing transactions, writing validations, and just every step possible to convert your database model into an Resource representation. \n\nThis module will make sure your code looks standarized and CRUD looks like a trivial thing.\n\nThis also addresses to reach the Richardson's Rest Maturity Model by implementing for you the fancy parts(Basically the Verbs, the status codes, and the Hateoas stuff). \n\nThis module also uses google API design in terms of resource responses, error handling and internal service names(with the exception of our **delete** reserved word :P).\n\n# Notes\n\n* This is the second module of a series of node-modules that I am creating with the main goal of creating node based microservices stacks. This will address the Relational database CRUD APi approach with some *database per service around here*.\n\n* It was based on a module that I've previously coded back in 2016, this module has a cleaner way of doing things and has less messy parts. It allows you to take more control on some things. Also has support for restify wich is cool.\n\n* This module was written using async/await so you it is easier to handle the tricky parts.\n\n* This module has some cool eslinting around.\n\n# Documentation\n\nYou can check [ESDOC documentation](https://mvillarrealb.github.io/sequelize-resource-controller/)\n\n# ROADMAP\n\n* I18N support:  Will be cool and nice to have translation messages for the supported errors and responses.\n\n* Extensible support for List endpoint: Basically override the findAll params to include associations or something like that.\n",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"sequelize-resource-controller\",\n  \"version\": \"1.0.0\",\n  \"description\": \"CRUD REST Api from your sequelize model for restify and express\",\n  \"main\": \"index.js\",\n  \"directories\": {\n    \"example\": \"examples\",\n    \"test\": \"test\"\n  },\n  \"scripts\": {\n    \"docs\": \"./node_modules/.bin/esdoc\",\n    \"lint\": \"./node_modules/.bin/eslint lib\",\n    \"test\": \"npm run test-unit && npm run test-integration\",\n    \"test-unit\": \"mocha -t 30000 --reporter spec \\\"test/unit/**/*.js\\\"\",\n    \"test-integration\": \"mocha -t 30000 --reporter spec \\\"test/integration/**/*.test.js\\\"\",\n    \"cover\": \"npm run cover-unit && npm run cover-integration\",\n    \"cover-integration\": \"nyc --reporter=html mocha test/integration/**/*.test.js\",\n    \"cover-unit\": \"nyc --reporter=html mocha test/unit/**/*.test.js\"\n  },\n  \"repository\": {\n    \"url\": \"https://github.com/mvillarrealb/sequelize-resource-controller.git\",\n    \"type\": \"git\"\n  },\n  \"author\": \"Marco Villarreal <erick.slayer.m.v@gmail.com>\",\n  \"license\": \"MIT\",\n  \"dependencies\": {\n    \"body-parser\": \"^1.18.3\",\n    \"debug\": \"^4.1.0\",\n    \"express\": \"^4.16.3\",\n    \"restify\": \"^7.2.1\",\n    \"sequelize\": \"^4.38.0\"\n  },\n  \"keywords\": [\n    \"rest\",\n    \"sequelize\",\n    \"CRUD Api\",\n    \"sequelize rest\",\n    \"resource Api\",\n    \"express api\",\n    \"restify Api\"\n  ],\n  \"publishConfig\": {\n    \"access\": \"public\"\n  },\n  \"engines\": {\n    \"node\": \">=10.9.0\"\n  },\n  \"devDependencies\": {\n    \"chai\": \"^4.1.2\",\n    \"chai-as-promised\": \"^7.1.1\",\n    \"chai-http\": \"^4.2.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-node\": \"^1.0.3\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.7.0\",\n    \"eslint-config-airbnb\": \"^17.1.0\",\n    \"eslint-config-airbnb-base\": \"^13.1.0\",\n    \"eslint-config-prettier\": \"^3.1.0\",\n    \"eslint-plugin-import\": \"^2.14.0\",\n    \"eslint-plugin-jsx-a11y\": \"^6.1.2\",\n    \"eslint-plugin-mocha\": \"^5.2.0\",\n    \"eslint-plugin-prettier\": \"^3.0.0\",\n    \"eslint-plugin-react\": \"^7.11.1\",\n    \"mocha\": \"^5.2.0\",\n    \"node-lite-router\": \"^1.0.0\",\n    \"nyc\": \"^12.0.2\",\n    \"prettier\": \"^1.14.3\",\n    \"restify-router\": \"^0.5.1\",\n    \"sqlite3\": \"^4.0.2\"\n  }\n}",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": true,
+    "content": "# sequelize-resource-controller\n\n[![npm version](https://img.shields.io/npm/v/sequelize-resource-controller.svg)](https://www.npmjs.com/package/sequelize-resource-controller)\n[![Build Status](https://travis-ci.org/mvillarrealb/sequelize-resource-controller.svg?branch=master)](https://travis-ci.org/mvillarrealb/sequelize-resource-controller)\n[![codecov](https://codecov.io/gh/mvillarrealb/sequelize-resource-controlle/branch/master/graph/badge.svg)](https://codecov.io/gh/mvillarrealb/sequelize-resource-controller)\n![node](https://img.shields.io/node/v/sequelize-resource-controller.svg)\n[![License](https://img.shields.io/npm/l/sequelize-resource-controller.svg?maxAge=2592000?style=plastic)](https://github.com/mvillarrealb/sequelize-resource-controller/blob/master/LICENSE)\n\nsequelize-resource-controller is a REST Resource abstraction layer, wich handles all the burden of creating transactions, handling rollbacks and formatting responses for your Resource based Api with sequelize. \n\nProvides support for Restify and Express, two of the most popular http frameworks for nodejs.\n\n# Installation\n\n```bash\nnpm install --save sequelize-resource-controller\n```\n\n# Testing\n\n## Run all tests\n\n```bash\nnpm test\n```\n\n## Run unit tests only\n\n```bash\nnpm run unit-test\n```\n\n## Run integ tests only\n\n```bash\nnpm run integ-test\n```\n\n---\n\n# Generate ESDOC Documentation\n\n```bash\nnpm run docs\n```\n---\n\n# Examples\n\n# Basic Example (Todo List Api)\n\nThe basic example is just a straighforward todo Api with very few files(one file for the database & models, and one for each implementation).\n\nEndpoint|verb|Description\n--|---|---\n/todos|POST| Creates a new TODO\n/todos|GET| Gets all TODOS\n/todos/:todo_id|GET| Get a single TODO by id\n/todos/:todo_id|PUT| Updates a Todo\n/todos/:todo_id|DELETE| Deletes a single todo\n\nTo test this api use [todo-api.postman_collection](examples/basic/todo-api.postman_collection.json)\n\n[You can check the example Here](examples/basic/README.md)\n\n# Advanced Example(Points of interest)\n\nThe advanced example uses *node-lite-router* to publish the endpoints of the api, and basically represents a points of interest api(POI).\n\nEndpoint|verb|Description\n--|---|---\n/v1/points-of-interest|POST|Creates a point of interest\n/v1/points-of-interest|GET|Gets all the points of interest in a paginated fashion\n/v1/points-of-interest/:poi_id|PUT| Updates a point of interest\n/v1/points-of-interest/:poi_id|DELETE| Deletes a point of interest\n/v1/points-of-interest/:poi_id|GET| Finds a particular a point of interest\n\nTo test this api use [poi-api.postman_collection](examples/advanced/poi-api.postman_collection.json)\n\n[You can check the example Here](examples/advanced/README.md)\n# Why sequelize-resource-controller(My motivations)?\n\nWhen writing CRUD based REST Apis with a relational database backend, you'll often find yourself loosing time with some stuff like implementing transactions, writing validations, and just every step possible to convert your database model into an Resource representation. \n\nThis module will make sure your code looks standarized and CRUD looks like a trivial thing.\n\nThis also addresses to reach the Richardson's Rest Maturity Model by implementing for you the fancy parts(Basically the Verbs, the status codes, and the Hateoas stuff). \n\nThis module also uses google API design in terms of resource responses, error handling and internal service names(with the exception of our **delete** reserved word :P).\n\n# Notes\n\n* This is the second module of a series of node-modules that I am creating with the main goal of creating node based microservices stacks. This will address the Relational database CRUD APi approach with some *database per service around here*.\n\n* It was based on a module that I've previously coded back in 2016, this module has a cleaner way of doing things and has less messy parts. It allows you to take more control on some things. Also has support for restify wich is cool.\n\n* This module was written using async/await so you it is easier to handle the tricky parts.\n\n* This module has some cool eslinting around.\n\n# Documentation\n\nYou can check [ESDOC documentation](https://mvillarrealb.github.io/sequelize-resource-controller/)\n\n# ROADMAP\n\n* I18N support:  Will be cool and nice to have translation messages for the supported errors and responses.\n\n* Extensible support for List endpoint: Basically override the findAll params to include associations or something like that.\n",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/docs/getting-started.md",
+    "name": "./docs/getting-started.md",
+    "content": "# Getting Started\n\nThe following steps will help you on getting started on sequelize-resource-controller.\n\n## Install The module\n\n```javascript\nnpm install --save sequelize-resource-controller\n```\n\n## Create your database models\n\nSequelize Resource controller needs a sequelize instance and your database models to convert them into resources.\n\nThe following is a recommended practice to use\n\n\n## Choose an implementation\n\nTo choose an implementation you just have to extract it from the module\nitself, whether you are using object property deconstructing or plain \nproperty access\n\n### Choose Express Implementation\n\n```javascript\nconst { express } = require('sequelize-resource-controller');\n//OR\nconst expressController = require('sequelize-resource-controller').express;\n```\n\n### Choose Restify Implementation\n\n```javascript\nconst { restify } = require('sequelize-resource-controller');\n//OR\nconst restifyController = require('sequelize-resource-controller').restify;\n```\n### Choose Raw Implementation\n\n```javascript\nconst { resourceController } = require('sequelize-resource-controller');\n//OR\nconst resourceController = require('sequelize-resource-controller').resourceController;\n```",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/docs/resource-controller.md",
+    "name": "./docs/resource-controller.md",
+    "content": "# Resource Controller\n\nThe raw implementation its just the internal abstraction layer of your model to manage the CRUD of your sequelize model.\n\n## Import the ResourceController\n\n```javascript\nconst { resourceController } = require('sequelize-resource-controller');\n```\n## Creating an instance\n\n```javascript\nconst myResource = new resourceController(sequelizeInstance, sequelizeModel);\n```\n\n## Inserting a model\n\nTo insert a model you just have to use the **create** method, it will receive as parameter an object with the model data. It will return a response object with two properties:\n\n* error: Any exception caught in model creation(including validations)\n* response: The created model instance(Sequelize.Model instance)\n\n```javascript\n\nconst {error,response} = await myResource.create({\n  name: 'Document your module'\n});\n//response will be a Sequelize.Model Instance\n\nconsole.log(response);\n\nconsole.log(response.get({ plain:true }));\n```\n\n## Finding Models\n\nTo find the models you have to use **findAll** method, this method internally uses findAll sequelize's method and takes optional parameters:\n\n* limit: Pagination limit(default to 10)\n* offset: THe offset of the paging(default is 0)\n* sortOrder:The sort order used in the query(default unused)\n* sortField: The sort attributes used in the query(default unused)\n\nThis method will return a response object with two properties:\n\n* error: Any exception caught in model querying\n* response: a complex object with pagination hinting and the rows found in the query(as plain instances)\n\n```javascript\nconst {error,response} = await myResource.findAll({ limit: 5, offset: 0});\nconsole.table(response.rows);\n```\n\n## Finding by Id\n\n```javascript\nconst todo_id = '';\nconst findOneResponse = await myResource.findOne({todo_id});\nconsole.table(findOneResponse.response);\n```\n\n## Update a model\n\n```javascript\nconst todo_id = '';\nconst findOneResponse = await myResource.findOne({todo_id});\nconst modelToBeUpdated = findOneResponse.response;\n\nconst {error,response} = await myResource.update(modelToBeUpdated, {\n  name: 'This todo was updated dude',\n  is_done: true\n});\n\nconsole.table(response);\n\n```\n\n## Destroy a model\n\n```javascript\nconst todo_id = '';\nconst findOneResponse = await myResource.findOne({todo_id});\nconst victimModel = findOneResponse.response;\n\nconst {error,response} = await myResource.destroy(victimModel);\n\nconsole.table(response);\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/docs/express-implementation.md",
+    "name": "./docs/express-implementation.md",
+    "content": "# express Implementation\nSame as on the restify implementation you have to follow the given steps:\n\n### Basic definitions\n\n```javascript\nconst express = require('express');\nconst expressController = require('sequelize-resource-controller').express;\nconst { sequelize, models } = require('db');\nconst app = express();\n```\n### Bind the endpoints using the Controller\n\n```javascript\nconst { todo } = models;\nconst yourController = new expressController(sequelize,todo);\nconst yourRouter = express.Router();\n/**\n * It is explicitly mandatory to use bind(controller) to avoid scope errors\n **/\nyourRouter.route('/').get(yourController.list.bind(yourController));\nyourRouter.route('/').post(yourController.create.bind(yourController));\nyourRouter.route('/:todo_id').get(yourController.getOne.bind(yourController));\n/**\n * To use getOne and destroy you must use a middleware called\n * getOneMiddleware wich will handle the existence validation(convenient for cool 404 status codes)\n */\nyourRouter.route('/:todo_id').put([\n  yourController.getOneMiddleware.bind(yourController),\n  yourController.update.bind(yourController)\n]);\n\nyourRouter.route('/:todo_id').destroy([\n  yourController.getOneMiddleware.bind(yourController),\n  yourController.destroy.bind(yourController)\n]);\n\napp.use('/v1/todos',yourRouter);\n\n```\n### Start the server\n\n```javascript\napp.listen(8000,() => {\n  console.log('Ready to rock');\n});\n```",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/docs/restify-implementation.md",
+    "name": "./docs/restify-implementation.md",
+    "content": "# Restify Implementation\n\nThe following steps will get you started with sequelize-resource-controller for restify\n\n### Basic definitions\n\nImport the required packages: restify, sequelize and anything else you need.\n\n```javascript\nconst restify = require('restify');\nconst { Router }  = require('restify-router');\nconst restifyController = require('sequelize-resource-controller').restify;\nconst { sequelize, models } = require('db');\nconst app = restify.createServer();\n```\n\n### Bind the endpoints using the Controller\n\nTo perform the binding you just have to use every method in your restifyController instance as shown below:\n\n```javascript\nconst { todo } = models;\nconst yourController = new restifyController(sequelize,todo);\nconst yourRouter = new Router();\n/**\n * It is explicitly mandatory to use bind(controller) to avoid scope errors\n **/\n//Define a endpoint to query paginated elements of your model\nyourRouter.get('/todos',yourController.list.bind(yourController));\n//Define an endpoint to create a element of your model\nyourRouter.post('/todos',yourController.create.bind(yourController));\n\n//Define and endpoint to find one single element of your model by its id\nyourRouter.get('/todos/:todo_id',yourController.getOne.bind(yourController));\n/**\n * To use getOne and destroy you must use a middleware called\n * getOneMiddleware wich will handle the existence validation(convenient for cool 404 status codes)\n */\nyourRouter.put('/todos/:todo_id', [\n  yourController.getOneMiddleware.bind(yourController),\n  yourController.update.bind(yourController)\n]);\n//Define an endpoint to delete a single element of your model by its id\nyourRouter.del('/todos/:todo_id',[\n  yourController.getOneMiddleware.bind(yourController),\n  yourController.destroy.bind(yourController)\n]);\n\nyourRouter.applyRoutes(app);\n```\n\n### Start the server\n\nJust use your implementation start method on a given port and you are ready to go.\n\n```javascript\napp.listen(8000,() => {\n  console.log('Ready to rock');\n});\n```",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/mvillarreal/Marco/develop/nodejs/my-node-modules/sequelize-resource-controller/docs/extending-controller.md",
+    "name": "./docs/extending-controller.md",
+    "content": "# Extending Controller\n\nYou can extend the existing implementations to add more functionality aside to the typical CRUD Resource methods.\n\n## Extension example\n\nIn this example we are using a ES6 class to extend Express implementation\nbasically adding a new method called listPending.\n\n```javascript\nclass TodoResource extends ExpressController {\n  \n  constructor(sequelize,model) {\n    super(sequelize,model);\n  }\n\n  async listPending(req,res) {\n    try {\n      const response = await this.model.findAll({\n        where: {\n          is_done: false\n        }\n      });\n      //This way it will be compatible for express and restify\n      //however you can just use res.status(..).send(..)\n      this.sendResponse(res, 200,response);\n    } catch(error) {\n      //custom formating\n      const resourceErr = this.resource.sequelizeError(error);\n      this.sendResponse(res, resourceErr.code, resourceErr);\n    }\n  }\n}\n```\nAfterwards you can easily publish the routes the same way as in the examples and add the new method:\n\n```js\nyourRouter.route('/pending').get(yourController.listPending.bind(yourController));\n\n```\n\nThis is convenient to basically getting started with the basic REST endpoints and then start adding some more complex endpoints for your api.",
+    "static": true,
+    "access": "public"
+  }
+]

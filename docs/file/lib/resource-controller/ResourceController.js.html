@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">lib/resource-controller/ResourceController.js | sequelize-resource-controller</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="CRUD REST Api from your sequelize model for restify and express"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sequelize-resource-controller"><meta property="twitter:description" content="CRUD REST Api from your sequelize model for restify and express"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/mvillarrealb/sequelize-resource-controller.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/ResourceError.js~ResourceError.html">ResourceError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/SequelizeError.js~SequelizeError.html">SequelizeError</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#implementations">implementations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/BaseRestController.js~BaseRestController.html">BaseRestController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/ExpressResourceController.js~ExpressResourceController.html">ExpressResourceController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#resource-controller">resource-controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/resource-controller/ResourceController.js~ResourceController.html">ResourceController</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/resource-controller/ResourceController.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const debug = require(&apos;debug&apos;)(&apos;sequelize-resource:resource-controller&apos;);
+const ResourceError = require(&apos;../errors/ResourceError&apos;);
+const SequelizeError = require(&apos;../errors/SequelizeError&apos;);
+const errorCodes = require(&apos;../errors/error_map&apos;);
+/**
+ * @class ResourceController
+ * @author Marco Villarreal
+ */
+class ResourceController {
+  /**
+   * @property SORT_ORDERS
+   * @static
+   * @type {Array}
+   */
+  static get SORT_ORDERS() {
+    return [&apos;ASC&apos;, &apos;DESC&apos;];
+  }
+
+  /**
+   * @constructor
+   * @param {Sequelize} sequelize
+   * @param {Sequelize.Model} model
+   */
+  constructor(sequelize, model) {
+    this.sequelize = sequelize;
+    this.model = model;
+    this.modelAttributes = Object.keys(this.model.attributes);
+    this.getPrimaryKey();
+    this.ERROR_CODES = errorCodes;
+  }
+
+  /**
+   * @method sortOrderSupported
+   * @param {String} sortOrder
+   * @return {Boolean}
+   */
+  sortOrderSupported(sortOrder) {
+    return ResourceController.SORT_ORDERS.indexOf(sortOrder.toUpperCase()) &gt;= 0;
+  }
+
+  /**
+   * @method attributeExists
+   * @param {String} attribute
+   * @return {Boolean}
+   */
+  attributeExists(attribute) {
+    return this.modelAttributes.indexOf(attribute) &gt;= 0;
+  }
+
+  /**
+   * @method setBaseURL
+   * @param {String} baseURL
+   */
+  setBaseURL(baseURL) {
+    if (this.baseURL == null) {
+      this.baseURL = baseURL;
+    }
+  }
+
+  /**
+   *
+   * @method _getPrimaryKey
+   * @return {Array}
+   */
+  getPrimaryKey() {
+    if (!this.primaryKey) {
+      this.primaryKey = Object.keys(this.model.primaryKeys);
+    }
+    return this.primaryKey;
+  }
+
+  /**
+   * @method sequelizeError
+   * @param {Error} originalError
+   * @return {SequelizeError}
+   */
+  sequelizeError(originalError) {
+    return new SequelizeError(originalError);
+  }
+
+  /**
+   * @method resourceError
+   * @param {String} errorCode
+   * @param {String} message
+   * @returns {ResourceError}
+   */
+  resourceError(errorType, message) {
+    return new ResourceError(errorType, message);
+  }
+}
+
+ResourceController.prototype.findOne = require(&apos;./methods/findOne&apos;)(debug);
+ResourceController.prototype.findAll = require(&apos;./methods/findAll&apos;)(debug);
+ResourceController.prototype.destroy = require(&apos;./methods/destroy&apos;)(debug);
+ResourceController.prototype.update = require(&apos;./methods/update&apos;)(debug);
+ResourceController.prototype.create = require(&apos;./methods/create&apos;)(debug);
+
+module.exports = ResourceController;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

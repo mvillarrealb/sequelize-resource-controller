@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">lib/implementations/BaseRestController.js | sequelize-resource-controller</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="CRUD REST Api from your sequelize model for restify and express"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="sequelize-resource-controller"><meta property="twitter:description" content="CRUD REST Api from your sequelize model for restify and express"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/mvillarrealb/sequelize-resource-controller.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#errors">errors</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/ResourceError.js~ResourceError.html">ResourceError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/errors/SequelizeError.js~SequelizeError.html">SequelizeError</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#implementations">implementations</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/BaseRestController.js~BaseRestController.html">BaseRestController</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/implementations/ExpressResourceController.js~ExpressResourceController.html">ExpressResourceController</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#resource-controller">resource-controller</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/lib/resource-controller/ResourceController.js~ResourceController.html">ResourceController</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">lib/implementations/BaseRestController.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const debug = require(&apos;debug&apos;)(&apos;sequelize-resource:base-rest-controller&apos;);
+const querystring = require(&apos;querystring&apos;);
+const ResourceController = require(&apos;../resource-controller/ResourceController&apos;);
+const ResourceError = require(&apos;../errors/ResourceError&apos;);
+
+/**
+ *
+ * @class BaseRestController
+ * @author Marco Villarreal
+ */
+class BaseRestController {
+  /**
+   *
+   * @constructor
+   * @param {Sequelize} sequelize
+   * @param {Sequelize.Model} model
+   */
+  constructor(sequelize, model) {
+    this.resource = new ResourceController(sequelize, model);
+    this.model = model;
+    this.baseURL = null;
+  }
+
+  checkJsonHeader(req) {
+    debug(`Unimplemented checkJsonHeader method on request ${req}`);
+    throw new ResourceError(ResourceError.ERRORS.INTERNAL, &apos;Unimplemented checkJsonHeader method&apos;);
+  }
+
+  async create(req, res) {
+    if (this.checkJsonHeader(req)) {
+      const { error, response } = await this.resource.create(req.body);
+      if (error) {
+        this.sendResponse(res, error.code, error);
+      } else {
+        this.sendResponse(res, 201, this.attachResourceLink(response.get({ plain: true }), req));
+      }
+    } else {
+      const error = new ResourceError(
+        ResourceError.ERRORS.FAILED_PRECONDITION,
+        &apos;Request body must be application/json&apos;
+      );
+      this.sendResponse(res, error.code, error);
+    }
+  }
+
+  /**
+   *  Note: implemented a little polifyll to satisfy query params on express(a collission issue caused by restify)
+   * @param {Request} req
+   * @param {Response} res
+   */
+  async list(req, res) {
+    let queryParams = req.query;
+    if (typeof req.query === &apos;function&apos;) {
+      queryParams = querystring.parse(req.query());
+    }
+    const { sortField, sortOrder } = queryParams;
+    const requestArgs = { sortField, sortOrder };
+    let { limit, offset } = queryParams;
+    if (limit != null) {
+      limit = parseInt(limit, 10);
+      requestArgs.limit = limit;
+    }
+
+    if (offset != null) {
+      offset = parseInt(offset, 0);
+      requestArgs.offset = offset;
+    }
+
+    const { error, response } = await this.resource.findAll(requestArgs);
+
+    if (error) {
+      this.sendResponse(res, error.code, error);
+    } else {
+      this.sendResponse(res, 200, this.attachResourcesLinks(response, req));
+    }
+  }
+
+  async getOne(req, res) {
+    const { error, response } = await this.resource.findOne(req.params);
+    if (error) {
+      this.sendResponse(res, error.code, error);
+    } else {
+      const resource = this.attachResourceLink(response.get({ plain: true }), req);
+      this.setHeaders(res, { Location: resource.links.self.href });
+      this.sendResponse(res, 200, resource);
+    }
+  }
+
+  async getOneMiddleware(req, res, next) {
+    const { response, error } = await this.resource.findOne(req.params);
+    if (error) {
+      this.sendResponse(res, error.code, error);
+    } else {
+      req.resource = response;
+      next();
+    }
+  }
+
+  async destroy(req, res) {
+    if (!req.resource) {
+      this.setStatus(res, 412);
+      this.response(res, null);
+    }
+    const { response, error } = await this.resource.destroy(req.resource);
+    if (error) {
+      this.sendResponse(res, error.code, error);
+    } else {
+      this.sendResponse(res, 200, response);
+    }
+  }
+
+  async update(req, res) {
+    if (this.checkJsonHeader(req)) {
+      if (!req.resource) {
+        this.setStatus(res, 412);
+        this.response(res, null);
+      } else {
+        const { response, error } = await this.resource.update(req.resource, req.body);
+        if (error) {
+          this.sendResponse(res, error.code, error);
+        } else {
+          this.sendResponse(res, 200, this.attachResourceLink(response));
+        }
+      }
+    } else {
+      const error = new ResourceError(
+        ResourceError.ERRORS.FAILED_PRECONDITION,
+        &apos;Request body must be application/json&apos;
+      );
+      this.sendResponse(res, error.code, error);
+    }
+  }
+
+  /**
+   *
+   * @method attachResourceLink
+   * @param {Object} resource
+   * @param {Request} requestObj
+   * @return {Object}
+   */
+  attachResourceLink(resource, requestObj) {
+    const linkedResource = resource;
+    try {
+      const baseURL = this.createHATEOABaseURL(requestObj);
+      const primaryKeys = this.resource.primaryKey.map(attribute =&gt; linkedResource[attribute]);
+      const href = `${baseURL}/${primaryKeys.join(&apos;/&apos;)}`;
+      linkedResource.links = {
+        self: { href }
+      };
+    } catch (error) {
+      debug(&apos;Error found attaching resource link %o&apos;, error);
+    }
+
+    return linkedResource;
+  }
+
+  /**
+   * @method attachResourcesLinks
+   * @param {Object} paginatedResources
+   * @param {Request} requestObj
+   * @return {Object}
+   */
+  attachResourcesLinks(paginatedResources, requestObj) {
+    const pagingInfo = paginatedResources.paging;
+    const baseURL = this.createHATEOABaseURL(requestObj);
+    const { first, next, previous } = pagingInfo;
+
+    const firstLink =
+      first != null ? `${baseURL}?limit=${first.limit}&amp;offset=${pagingInfo.first.offset}` : null;
+    const nextLink =
+      next != null ? `${baseURL}?limit=${next.limit}&amp;offset=${pagingInfo.next.offset}` : null;
+    const previousLink =
+      previous != null ? `${baseURL}?limit=${previous.limit}&amp;offset=${previous.offset}` : null;
+
+    const linkedResources = paginatedResources.rows.map(dataRow =&gt;
+      this.attachResourceLink(dataRow, requestObj)
+    );
+
+    return {
+      rows: linkedResources,
+      links: {
+        first: firstLink,
+        next: nextLink,
+        previous: previousLink
+      }
+    };
+  }
+}
+
+module.exports = BaseRestController;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
