@@ -1,6 +1,5 @@
 .nyc_output
 .vscode/
 node_modules
-coverage/*
 package-lock.json
 *.db
