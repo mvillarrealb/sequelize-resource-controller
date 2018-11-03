@@ -13,9 +13,10 @@
     "test": "npm run test-unit && npm run test-integration",
     "test-unit": "mocha -t 30000 --reporter spec \"test/unit/**/*.js\"",
     "test-integration": "mocha -t 30000 --reporter spec \"test/integration/**/*.test.js\"",
-    "cover": "npm run cover-unit && npm run cover-integration",
-    "cover-integration": "nyc --reporter=html mocha test/integration/**/*.test.js",
-    "cover-unit": "nyc --reporter=html mocha test/unit/**/*.test.js"
+    "cover": "npm run cover-unit && npm run cover-integration && npm run merge-coverage",
+    "cover-integration": "nyc --reporter=text-lcov > coverage/lcov-integration.info mocha test/integration/**/*.test.js",
+    "cover-unit": "nyc --reporter=text-lcov > coverage/lcov-unit.info mocha test/unit/**/*.test.js",
+    "merge-coverage": "lcov-result-merger \"coverage/*.info\" \"coverage/lcov.info\""
   },
   "repository": {
     "url": "https://github.com/mvillarrealb/sequelize-resource-controller.git",
@@ -61,6 +62,7 @@
     "eslint-plugin-mocha": "^5.2.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
+    "lcov-result-merger": "^3.1.0",
     "mocha": "^5.2.0",
     "node-lite-router": "^1.0.0",
     "nyc": "^12.0.2",
